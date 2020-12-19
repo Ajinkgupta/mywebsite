@@ -1,8 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <title>Ajink Gupta</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
 	<link rel="icon" href="favicon.png" sizes="16x16" type="image/png"> 
 <link rel="icon" href="favicon.png" sizes="16x16 32x32" type="image/png">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -10,6 +12,32 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
+  
+
+svg {
+	font-family: 'Russo One', sans-serif;
+	position: absolute; 
+	width: 100%; height: 100%;
+}
+svg text {
+	text-transform: uppercase;
+	animation: stroke 5s infinite alternate;
+	stroke-width: 2;
+	stroke: #365fa0;
+	font-size: 140px;
+}
+@keyframes stroke {
+	0%   {
+		fill: rgba(72,138,20,0); stroke: orangered;
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+	}
+	70%  {fill: rgba(209, 183, 98, 0); stroke: orangered; }
+	80%  {fill: rgba(211, 178, 30, 0); stroke: orangered; stroke-width: 3; }
+	100% {
+		fill: rgb(240, 110, 4); stroke: rgba(54,95,160,0); 
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+	}
+}
 	.footer {
   background-color: orange;
   padding: 10px;
@@ -103,52 +131,31 @@ margin:0;}
 background-image: url("https://www.theajinkgupta.tk/writer%203.jpeg");
 background-repeat: no-repeat;
 background-size: 100% 100%;
+
 background-attachment: fixed;
 box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   padding: 2px 16px;
 }
 
-
-.text-line text{
-left:2px;
-	 stroke-dasharray: 500;
-	 stroke-dashoffset: 500;
-   animation: dash 5s linear forwards, filling 4s ease-in forwards;
-   animation-iteration-count:10000000;
-}
- @keyframes dash {
-	 to {
-		 stroke-dashoffset: 0;
-	}
-}
- @keyframes filling {
-	 from {
-		 fill: #ebd40c;
-		 fill-opacity: 0;
-	}
-	 to {
-		 fill: #f8ba0f;
-		 fill-opacity: 1;
-	}
-}
 @media only screen and (max-width: 600px) {
-.text-line {
-	height:60px;
-	width:260px;
-	}
-   text { 
-      font-size:40px ; 
-   }
 
-}
+body {
+width:103%;
+
+
 	</style>
 <body>
-<centre>
-<svg height="100" width="800" stroke="orange" stroke-width="2" class="text-line">
-    <text style="font-family: 'Baloo Tamma', georgia, times, serif; font-weight: normal; font-style: normal" x="90" y="90" fill="none" font-size="100" >Ajink Gupta</text>
-  </svg>
-</centre>
+
+  
+
+<svg viewBox="0 0 1200 300">
+	<text x="50%" y="10%" dy=".35em" text-anchor="middle">
+		TheAjinkGupta
+	</text>
+</svg>	
+
+
 <!-- Page content -->
 
 <div class="tab1">
@@ -157,7 +164,7 @@ left:2px;
    WELCOME
  </h1>
   </marquee>
-
+<br><br><br><br>
 <script language="javascript">
 <!--
 
@@ -168,8 +175,9 @@ document.write(unescape('%3C%62%72%3E%3C%62%72%3E%3C%62%72%3E%3C%62%72%3E%3C%62%
 <br><br><br>
 <br>
 <br><br><br>
-<br>
-<br><br><br>
+<br><br><br><br>
+<br><br><br><br><br>
+
 </div>
 
 <div id="About">
