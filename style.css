@@ -1,0 +1,132 @@
+.footer {
+  background-color: orange;
+  padding: 10px;
+  text-align: center;
+}
+.aj {
+padding:20px;
+}
+.card1 {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px; 
+}
+
+#About {
+background-image: url("https://www.theajinkgupta.tk/writer%202.jpeg");
+background-repeat: no-repeat;
+background-size: 100% 100%;
+background-attachment: fixed;
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  padding: 2px 16px;
+}
+#servise {
+color:orange;
+background-image: url("https://www.theajinkgupta.tk/coding1.jpeg");
+background-repeat: no-repeat;
+background-size: 100% 100%;
+background-attachment: fixed;
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  padding: 2px 16px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.button {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 12px 24px;
+    border: 2px solid #a12727;
+    border-radius: 8px;
+    background: #4affd2;
+    background: -webkit-gradient(linear, left top, left bottom, from(#4affd2), to(#000000));
+    background: -moz-linear-gradient(top, #4affd2, #000000);
+    background: linear-gradient(to bottom, #4affd2, #000000);
+    text-shadow: #591717 1px 1px 1px;
+    font: normal normal bold 20px arial;
+    color: #ffff0a;
+    text-decoration: none;
+}
+.button:hover,
+.button:focus {
+    background: #59fffc;
+    background: -webkit-gradient(linear, left top, left bottom, from(#59fffc), to(#000000));
+    background: -moz-linear-gradient(top, #59fffc, #000000);
+    background: linear-gradient(to bottom, #59fffc, #000000);
+    color: #ffff0a;
+    text-decoration: none;
+}
+.button:active {
+    background: #2c997e;
+    background: -webkit-gradient(linear, left top, left bottom, from(#2c997e), to(#000000));
+    background: -moz-linear-gradient(top, #2c997e, #000000);
+    background: linear-gradient(to bottom, #2c997e, #000000);
+}
+.button:before{
+    content:  "\0000a0";
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    line-height: 24px;
+    margin: 0 4px -6px -4px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAA5UlEQVRIidWVsQ7CMAxEX0N/mYWNianfww4zH1RVCgxQ5Bo7iat24CSrrnrxOeem7YDEjpiLZ+d53iLXO0hb5yUBgCswOXGngr5BpBc8a31xhnIG2j9vLhYkf5HrznTRiIgJz6Io3EHPAlkRskEuQfIXuVXAe69X4f8t0kVOwMjyMD0rIbkjcNGNJXFNwLmhqBeDqDOHeYrXiAw4s/B8jojo4j8dS4tktIhYtlQtknlJxLWFBoskLJGiLVbHpW3qndRs+cYB6FRnHe8DovPb5/4BHB2OlYc/EyG+/B9EFoZEdv3pvwDEe4YDHQjF2wAAAABJRU5ErkJggg==") no-repeat left center transparent;
+    background-size: 100% 100%;
+}
+
+
+body {
+	width: 100%;
+    height: auto;
+	font-family: "Lato", sans-serif
+margin:0;}
+
+.tab1 {
+background-image: url("https://www.theajinkgupta.tk/writer%203.jpeg");
+background-repeat: no-repeat;
+background-size: 100% 100%;
+background-attachment: fixed;
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  padding: 2px 16px;
+}
+
+
+.text-line text{
+left:2px;
+	 stroke-dasharray: 500;
+	 stroke-dashoffset: 500;
+   animation: dash 5s linear forwards, filling 4s ease-in forwards;
+   animation-iteration-count:10000000;
+}
+ @keyframes dash {
+	 to {
+		 stroke-dashoffset: 0;
+	}
+}
+ @keyframes filling {
+	 from {
+		 fill: #ebd40c;
+		 fill-opacity: 0;
+	}
+	 to {
+		 fill: #f8ba0f;
+		 fill-opacity: 1;
+	}
+}
+@media only screen and (max-width: 600px) {
+.text-line {
+	height:60px;
+	width:260px;
+	}
+   text { 
+      font-size:40px ; 
+   }
+
+}
