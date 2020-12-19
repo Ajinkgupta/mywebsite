@@ -176,134 +176,33 @@ you can follow me on github ,facebook , instagram.
 
 <h1>my projects </h1>
 
+<section id="projects">
+  
+  <!-- Example with figure -->
+  <figure class="project effect">
+    <img src="https://www.theajinkgupta.tk/files/JavaScript-protected.jpeg" alt="Project">
+    <figcaption>
+      <header><h3>javascript project 1</h3></header>
+      <p>hello , everyone 
+      on websites anyone can know that what scripts and css you are using that is some premium working things for free
+      it can be 80% effective</p>
+      <p>
+        
+    </figcaption>
+  </figure>
 
-<ul class="slideshow">
-	<li><span></span></li>
-  <li><span></span></li>
-	<li><span></span></li>
-	<li><span></span></li>
-	<li><span></span></li>
-</ul>
-<br><br><br><br><br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-<style>
-#projects {
- 
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  width: 98%;
-  border-radius: 5px;
-}
-
-#projects:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-img {
-  border-radius: 5px 5px 0 0;
-}
-
-#projects {
-  padding: 2px 16px;
-}
-}
-
- .slideshow {
-  list-style-type: none;
-}
-
-/** SLIDESHOW **/
-.slideshow,
-.slideshow:after { 
-
-	
-    width: 97%;
-    height: 100%;
-    left: 10px;
-    z-index: 0; 
-}
-
-.slideshow li span { 
-		position: absolute;
-    width: 97%;
-    height: 100%;
-   
-    left: 10px;
-    color: transparent;
-    background-size: cover;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    opacity: 0;
-    z-index: 0;
-    animation: imageAnimation 30s linear infinite 0s; 
-}
-
-
-
-.slideshow li:nth-child(1) span { 
-    background-image: url("https://www.theajinkgupta.tk/files/JavaScript-protected.jpeg"); 
-}
-.slideshow li:nth-child(2) span { 
-    background-image: url("https://www.theajinkgupta.tk/files/images-35.jpeg");
-    animation-delay: 6s; 
-}
-.slideshow li:nth-child(3) span { 
-    background-image: url("https://www.theajinkgupta.tk/files/JavaScript-protected.jpeg");
-    animation-delay: 12s; 
-}
-.slideshow li:nth-child(4) span { 
-    background-image: url("https://www.theajinkgupta.tk/files/images-35.jpeg");   
-    animation-delay: 18s; 
-}
-.slideshow li:nth-child(5) span { 
-    background-image: url("https://www.theajinkgupta.tk/files/JavaScript-protected.jpeg");
-    animation-delay: 24s; 
-}
-
-
-
-@keyframes imageAnimation { 
-    0% { opacity: 0; animation-timing-function: ease-in; }
-    8% { opacity: 1; animation-timing-function: ease-out; }
-    17% { opacity: 1 }
-    25% { opacity: 0 }
-    100% { opacity: 0 }
-}
-
-
-@keyframes titleAnimation { 
-    0% { opacity: 0 }
-    8% { opacity: 1 }
-    17% { opacity: 1 }
-    19% { opacity: 0 }
-    100% { opacity: 0 }
-}
-
-
-.no-cssanimations .cb-slideshow li span {
-	opacity: 1;
-}
-</style>
+  <!-- Example with divs -->
+  <div class="project effect">
+    <img src="https://www.theajinkgupta.tk/files/images-35.jpeg" alt="Project">
+    <div class="project-description">
+      <header><h3>javascript project 2 </h3></header>
+      <p>its a simple project which may help you gain login without server.
+      </p>
+      <p>
+       
+    </div>
+  </div>
+</section>
 </div>
 <div id="follow"></div>
 
@@ -373,6 +272,103 @@ document.write(unescape('%3C%21%44%4F%43%54%59%50%45%20%68%74%6D%6C%3E%0A%3C%68%
   background: #125688;
   color: white;
 }
+
+  /* FLUID TYPOGRAPHY */
+/* Shared (global) default settings */
+ * {
+	/*box-sizing is important for my calculations with paddings, but i won't force you to use it with !important for all elements.*/
+	 box-sizing: border-box;
+	 padding: 0px;
+	 margin: 0px;
+	 font-family: lato, sans-serif;
+}
+/* Container for projects */
+ #projects {
+	 position: relative;
+	 display: grid;
+	 grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+	 text-align: center;
+	 justify-content: center;
+	 grid-gap: 3em;
+	 padding: 3em;
+}
+ #projects {
+	 font-size: 13px;
+}
+ @media screen and (min-width: 320px) {
+	 #projects {
+		 font-size: calc(13px + 7 * (( 100vw - 320px ) / 880));
+	}
+}
+ @media screen and (min-width: 1200px) {
+	 #projects {
+		 font-size: 20px;
+	}
+}
+/* Actual project card code */
+ .project {
+	 position: relative !important;
+	 overflow: hidden !important;
+	 width: 15em;
+	 min-height: 15em;
+	 margin: 0 auto;
+	 background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8));
+	 color: white;
+	 text-shadow: 2px 2px 8px black;
+	 box-shadow: 5px 7px 20px rgba(0, 0, 0, 0.6);
+}
+ .project img {
+	 width: 100%;
+	 height: 100%;
+}
+ .project .project-description, .project figcaption {
+	 position: absolute !important;
+	 top: 0px;
+	 left: 0px;
+	 padding: 1em;
+	 width: 100%;
+	 height: 100%;
+}
+ .project .project-description a, .project figcaption a {
+	 position: absolute;
+	 top: 0px;
+	 left: 0px;
+	 height: 100%;
+	 width: 100%;
+	 z-index: 1000;
+	 font-size: 0;
+	 opacity: 0;
+}
+ .project .project-description p, .project figcaption p {
+	 text-align: left;
+}
+ .project .project-description header, .project figcaption header, .project .project-description p, .project figcaption p {
+	 padding-bottom: 0.7em;
+}
+ .project .project-description header, .project figcaption header {
+	 text-align: center;
+	 margin-bottom: 0.2em;
+}
+ .project.effect * {
+	 transition: opacity 200ms ease-in-out, transform 200ms ease-in-out;
+	 opacity: 0;
+}
+ .project.effect p {
+	 transform: translateX(100%);
+}
+ .project.effect img {
+	 opacity: 1;
+	 transform: scale(1.1);
+}
+ .project.effect:hover img {
+	 opacity: 0.2;
+	 transform: rotate(5deg) scale(1.1);
+}
+ .project.effect:hover * {
+	 opacity: 1;
+	 transform: translateX(0%);
+}
+ 
 
 </style>
 </body>
