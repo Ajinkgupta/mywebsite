@@ -1,15 +1,50 @@
-
-
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <!-- Global Site Tag (gtag.js) - Google Analytics -->
-  
-    <meta charset="UTF-8">
-    <title>UPI Payment Button Generator</title>
-    <style>
-    .label {
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width:50%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+.label {
     font-weight: bold;
     font-size:30px;
     color:black;
@@ -21,9 +56,9 @@
   margin:20%;
     }
     body {
-        width:100%;
+        width:98%;
     margin:0px;
-    color:white;
+   
     }
     input[type=text] {
   width: 100%;
@@ -46,13 +81,15 @@
     color:black;
     padding:5px;
     }
-    </style>
-   
+</style>
 </head>
-<body bgcolor="black" >
+<body  bgcolor="black">
 
-<h2 align="center">UPI Payment Button Generator</h2>
-<div>
+<h2 style="color:white;"align="center">UPI Payment Button Generator</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+    <div>
 <center text-size:20px;>
     <div class="group">
      
@@ -63,10 +100,14 @@
      <label class="label" for="vpaname">your name: </label>  <input id="vpaname" type="text" placeholder="Ajink Gupta">
    
 <label class="label" for="vpa">your UPI id </label> <input id="vpa" type="text" placeholder="ajinkgupta@ybl">
-
-</div>
 </center>
-
+</div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+    
 <center>
 <h2>UPI BUTTON DEMO </H2>
 
@@ -75,10 +116,9 @@
 </center>
 <h1 align="center">Button Code</h1>
 <div id="generated">--</div>
-
-
-
-
+    </div>
+  </div>
+</div>
 
 <script>
     //Now, Page is loaded. Copy rendered button into pre-tag
@@ -112,6 +152,7 @@
     });
     generateFullCode();
 </script>
+
 
 </body>
 </html>
