@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+   
+     <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Search Wikipedia</title>
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!-- J-Query -->
+  <script src="https://code.jquery.com/jquery-2.2.2.min.js" integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI=" crossorigin="anonymous"></script>
+  <!-- Wiki API call & others -->
+  <script type="text/javascript">
+    // Search on press of return key
+    function pressed(e) {
+      if ( (window.event ? event.keyCode : e.which) == 13) {
+        callWikipedia();
+      }
+    }
+
+    // Link needs to be visible to the click function
+    var link;
+
+    // Call Wikipedia's API
+    function callWikipedia () {
+
+      var searchString = $( "#searchString" ).val();
+      var searchStringEncoded = encodeURIComponent(searchString);
+      var title;
+      var snippet;
+
+      $.ajax( {
+          url: "https://en.wikipedia.org/w/api.php?format=json&action=query&generator=search&gsrnamespace=0&prop=pageimages|extracts&pilimit=max&exintro&explaintext&exsentences=3&exlimit=max&gsrsearch="+searchStringEncoded,
+          jsonp: "callback",
+          dataType: 'jsonp',
+          data: {},
+          xhrFields: { withCredentials: true },
+
+          success: function(response) {
+            console.log(response);
+            document.getElementById("results").innerHTML = "";
+            for(g in response.query.pages) {
+            title = response.query.pages[g].title;
+            snippet = response.query.pages[g].extract;
+            link = '<a target="_blank" href="https://en.wikipedia.org/wiki/' + title.replace(/ /g,"_") + '">';
+            var newLi = document.createElement("div");
+            document.getElementById("results").appendChild(newLi);
+            document.getElementById("results").lastChild.className = "box";
+            document.getElementById("results").lastChild.innerHTML = link + "<h2>" + title + "</h2>" + "<p>" + snippet +"</p>" + "</a>";
+            }
+          }
+      });
+    }
+
+    // Make each results div clickable
+    $(".box").click(function() {
+      window.open(link.toString(),'_blank');
+    });
+
+  </script>
+</head>
+
+<body>
+
+  <div class="form">
+<center> <img height="110px" width="100px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Wikipedia-logo-v2-hi.svg/669px-Wikipedia-logo-v2-hi.svg.png" alt="" > </center>
+      <h3></h3>
+      <input type="text" onkeydown="pressed(event)" onfocus="this.select();" id="searchString">
+     
+    </div>
+
+<br><br><br><br>
+
+  <div id="results">
+      <ul></ul>
+    </div>
+
+    <footer>
+    <center style="font-size:40px">powered by Wikipedia</center>
+        <center>
+          copyright © 2020 | All rights reserved 
+        </center>
+       
+      </footer>
+</body>
+</html>
+<style>
+body{
+     max-width: 100%;
+  background-image: url("https://i.pinimg.com/originals/46/5a/3d/465a3d0703fdd4c804f0dba25f7f5e19.gif");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+    
+  
+  footer {
+    background-color: 	#FF7F50;
+    color:black;
+    font-weight: 200;
+text-align: center;
+padding: 10px;
+  }
+ 
+    			* {
+  font-family: sans-serif;
+}
+
+@media screen only and (min-width: 600px) {
+    body {
+        padding-left: 20%;
+        padding-right: 20%
+    }
+}
+
+div.form {
+ 
+  text-align: center;
+}
+
+input[type="text"] {
+  display: inline-block;
+  margin: 0;
+  font-family: serif;
+  font-size: 18px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+  border-radius: 30px;
+  border-bottom-left-radius: 30px;
+  padding: 10px;
+  border: solid 1px #fff;
+  box-shadow: inset 1px 1px 3px 0 #666666;
+  transition: box-shadow 0.3s;
+  background-color: #ffe609;
+}
+
+input[type="text"]:focus, input[type="text"].focus {
+  outline: none;
+  box-shadow: inset 1px 1px 2px 0 #c9c9c9;
+}
+
+
+a, a:focus, a:hover {
+  text-decoration: none;
+  color: #063442;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #01f10181;
+}
+
+div.box {
+  padding: 0px 10px 0px 10px;
+  margin-bottom: 10px;
+  border: 2px solid #f7fc00;
+  border-radius: 20px;
+  box-shadow: 1px 1px 1px 1px #e099fc;
+  background-color: white;
+}
+
+ 
+.fa{
+
+ 
+color:red;
+ animation: mymove 0.5s infinite;
+}
+@keyframes mymove {
+ from {color: red;}
+ to {color: orange;}
+}
+.middle-content {
+background-color: rgb(12, 177, 122);
+padding-left: 20px;
+}
+h2 {
+  margin-bottom: 0;
+}
+</style>
