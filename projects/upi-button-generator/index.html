@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,6 +18,11 @@ body {
   width:50%;
   padding: 0 10px;
 }
+.column1 {
+  float: left;
+  width:100%;
+  padding: 0 10px;
+}
 
 /* Remove extra left and right margins, due to padding */
 .row {margin: 0 -5px;}
@@ -31,6 +37,11 @@ body {
 /* Responsive columns */
 @media screen and (max-width: 600px) {
   .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+   .column1 {
     width: 100%;
     display: block;
     margin-bottom: 20px;
@@ -114,6 +125,10 @@ body {
 <div id="render"><a href="upi://pay?pa=ajinkgupta@ybl&pn=Ajink Gupta&cu=INR" id="__UPI_BUTTON__" style="background: #ee5;border: 2px solid #aa67a9;padding: 10px;text-decoration: none;color: black;font-size: larger;border-radius: 10px;">Pay Using UPI</a></div>
 
 </center>
+  </div>
+  </div>
+  <div class="column1">
+    <div class="card">
 <h1 align="center">Button Code</h1>
 <div id="generated">--</div>
     </div>
