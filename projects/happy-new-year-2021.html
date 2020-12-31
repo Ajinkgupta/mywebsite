@@ -221,11 +221,15 @@ anime.timeline({loop: true})
     delay: 1000
   });
 </script>
-<audio autoplay>
-  <source src="https://www.theajinkgupta.tk/files/fire-crackers-sound-effect_cvPn5dUO.mp3" type="audio/ogg">
-  <source src="https://www.theajinkgupta.tk/files/fire-crackers-sound-effect_cvPn5dUO.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
+<script>
+window.addEventListener("DOMContentLoaded", event => {
+  const audio = document.querySelector("audio");
+  audio.volume = 0.8;
+  audio.play();
+});
+</script>
+<audio 
+  src="https://www.theajinkgupta.tk/files/fire-crackers-sound-effect_cvPn5dUO.mp3" />
 <style>
 
 .cta {
