@@ -136,7 +136,7 @@ animation-iteration-count: 1112;
   
 </h1>
     <p>&nbsp;<span style="background-color: white; color: #ff9933; font-size: 20px; font-weight: 700; text-align: center;">Let us look back at the past year with the warmest of memories. Happy New Year.</span></p>
-    <p><strong style="background-color: white; border: 0px; font-family: Oswald, sans-serif; font-size: 30.4px; letter-spacing: -0.608px; margin: 0px; padding: 0px; text-align: justify; vertical-align: baseline;"><span style="border: 0px; margin: 0px; padding: 0px; vertical-align: baseline;">“नया साल, नयी उम्मीदें, नए विचार और नयी शुरुवात भगवान करें आपकी हर दुआ हकीकत बन जाये।”</span><span style="border: 0px; color: #ff6600; margin: 0px; padding: 0px; vertical-align: baseline;"><span style="border: 0px; color: black; margin: 0px; padding: 0px; vertical-align: baseline;">&nbsp;</span>― नया साल आपको मुबारक हो<span id="outputName1">____</span>!</span></strong></p>
+    <p><strong style="background-color: white; border: 0px; font-family: Oswald, sans-serif; font-size: 30.4px; letter-spacing: -0.608px; margin: 0px; padding: 0px; text-align: justify; vertical-align: baseline;"><span style="border: 0px; margin: 0px; padding: 0px; vertical-align: baseline;">“नया साल, नयी उम्मीदें, नए विचार और नयी शुरुवात भगवान करें आपकी हर दुआ हकीकत बन जाये।”</span><span style="border: 0px; color: #ff6600; margin: 0px; padding: 0px; vertical-align: baseline;"><span style="border: 0px; color: black; margin: 0px; padding: 0px; vertical-align: baseline;">&nbsp;</span>― नया साल आपको मुबारक हो , <span id="outputName1">____</span>!</span></strong></p>
   </div>
 </div>
 </center>
@@ -148,7 +148,7 @@ animation-iteration-count: 1112;
   
   
   Click on Button to See the effect
-  <button id="name">Name</button>
+  <button  class="cta"  id="name">Name</button>
   
   
   
@@ -226,3 +226,39 @@ anime.timeline({loop: true})
   <source src="https://www.theajinkgupta.tk/files/fire-crackers-sound-effect_cvPn5dUO.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
+<style>
+
+.cta {
+    display: flex;
+    padding: 10px 45px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    color: white;
+    background: #6225E6;
+    transition: 1s;
+    box-shadow: 6px 6px 0 black;
+    transform: skewX(-15deg);
+}
+
+.cta:focus {
+   outline: none; 
+}
+
+.cta:hover {
+    transition: 0.5s;
+    box-shadow: 10px 10px 0 #FBC638;
+}
+
+.cta span:nth-child(2) {
+    transition: 0.5s;
+    margin-right: 0px;
+}
+
+.cta:hover  span:nth-child(2) {
+    transition: 0.5s;
+    margin-right: 45px;
+}
+
+
+</style>
