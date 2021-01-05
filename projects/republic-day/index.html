@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -179,6 +180,25 @@ font-weight:1000;
 color:rgb(0, 89, 255);
 text-shadow: 2px 1px black;
 }
+.card43 {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 80%;
+  BACKGROUND:URL(https://jhakas.com/wp-content/uploads/2020/01/red-fort-image-e1579121154887.jpg);
+}
+
+.BUTTON {
+  background-color: ORANGE;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
 
 * {
        margin: 0;
@@ -275,8 +295,8 @@ text-shadow: 2px 1px black;
 
 @keyframes example {
   0%   { left:0px; top:0px;}
-  25%  {left:90%; top:0px;}
-  50%  {left:90%; top:100%;}
+  25%  {left:80%; top:0px;}
+  50%  {left:80%; top:100%;}
   75%  { left:0px;top:100%;}
   100% { left:0px; top:0px;}
 }
@@ -373,24 +393,27 @@ text-shadow: 2px 1px black;
         </script>
     </div>
     </div>
+
+  <BR><BR><BR>
+      <div class="card43">
+        <img src="https://www.theajinkgupta.tk/files/1609823494695.png" alt="Avatar" style="height: auto; width: 198px" id="imgClickAndChange"  >
+         <audio  loop  src="https://www.theajinkgupta.tk/files/jan-gan-man.mp3"  id="audio" ></audio>
+        <IMG SRC="https://thumbs.gfycat.com/RepentantApprehensiveLeafwing-max-1mb.gif" WIDTH="150PX">
+        <A CLASS="BUTTON" onclick="changeImage()" > HOIST THE FLAG </A>
+        
+</div>
+
+
     </center>
 
 
     <input type="text" placeholder="👉 TYPE YOUR NAME HERE." id="myInput">
     <button type="button" onclick="getInputValue();">👉GO</button>
     <center> <Br><br> <span id="outputCity"></span>
-      <audio  autoplay loop controls src="https://www.theajinkgupta.tk/files/jan-gan-man.mp3" allow="autoplay" allow="loop" id="audio" ></audio
+     
       </center>
    <a id="myAnchor" href="" data-os="Whatsapp"><img src="https://www.hastingspubliclibrary.org/site-assets/images/4202050-chat-logo-social-social-media-whatsapp.png" style="animation: tada 2s infinite;margin-top:5px;height: 50px;width:50px;"></a>
-    <br><br> <note>
-      A number of images used in this project doesnot belong to me , if your image is used and you want it to be removed you can contact me <a href="https://www.facebook.com/Ajinkgupta12/"> AJINK</a> for instant removal of ontent , copyright disclaimer .Copyright Disclaimer under section 107 of the Copyright Act 1976, allowance is made for “fair use” for purposes such as criticism, comment, news reporting, teaching, scholarship, education and research.
-      
-      Fair use is a use permitted by copyright statute that might otherwise be infringing. 
-      
-      Non-profit, educational or personal use tips the balance in favor of fair use. 
-      And this is non-profit website
-      
-      </note>   <br >  <br><br>   <br><br><br> 
+    <br><br>   <br >  <br><br>   <br><br><br> 
 
 
 
@@ -435,6 +458,7 @@ var str = window.location.search.substring(3);
   document.getElementById("referrer").innerHTML=decodeURI(str); 
     
   document.title=decodeURI(str)+" wishing you happy republic day 2021";
+ 
 
   function getInputValue(){
               // Selecting the input element and get its value 
@@ -448,7 +472,16 @@ var str = window.location.search.substring(3);
              
     document.getElementById("myAnchor").href ="whatsapp://send?text=🤗😇 Have you seen this???"+inputVal+" send you a surprise message %0A💁 *Open this*%0A👇 https://www.theajinkgupta.tk/projects/republic-day/?r="+inputVal;
     document.getElementById("myAnchor").style.display = "block";
+    document.getElementById('audio').play();
           }
+          function changeImage() {
+
+document.getElementById("imgClickAndChange").src = "https://cdn.sharechat.com/7ea7e2e9-0a5e-436e-b300-041bf9503d70-76b42b2b-3bae-4cbd-86a5-02907d8c2e8e.gif";
+document.getElementById('audio').play();
+}
   
 </script>
+
+
+
 
