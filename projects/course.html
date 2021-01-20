@@ -1,11 +1,7 @@
-
-
-
-
-
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title> TheAjinkGupta </title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -47,15 +43,17 @@
 </div>
 </DIV>
 <div class="content">
-  <div class="content1">
+  <div class="content200">
   
 <style>
+
 * {
   box-sizing: border-box;
 }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+
 }
 
 /* Float four columns side by side */
@@ -79,12 +77,19 @@ body {
   display: table;
   clear: both;
 }
+@media screen and (min-width: 600px) {
+.collapsible {
+display:none;
+}
+}
 
 /* Responsive columns */
 @media screen and (max-width: 600px) {
+
+
   .column1 {
     width: 100%;
-    display: block;
+    display: none;
     margin-bottom: 20px;
   }
   .column12 {
@@ -98,7 +103,7 @@ body {
 /* Style the counter cards */
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 16px;
+  padding: 10px 0px;
   text-align: center;
   background-color: #f1f1f1;
 }
@@ -129,9 +134,9 @@ body {
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 10px 20px;
+  padding: 10px 0px;
   font-size: 15px;
-  
+  width:25%;
   font-weight:bold;
 }
 
@@ -148,6 +153,51 @@ body {
 }
 
 
+.collapsible {
+
+  color: white;
+  cursor: pointer;
+  padding:5px;
+background:orange;
+font-size:20px;
+font-weight:bold;
+border:1px solid red;
+  
+  
+  
+}
+.collapsible1 {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  
+}
+
+
+.content12 {
+  padding: 0 18px;
+
+  overflow: hidden;
+  background-color: orange;
+}
+#content {
+display: none;
+}
+.button100 {
+padding:5px;
+background:orange;
+font-size:20px;
+font-weight:bold;
+border:1px solid red;
+float:right;
+}
+
 </style>
 <div class="row">
 <br>
@@ -157,15 +207,22 @@ body {
 <div class="container12" id="player"> 
   <iframe class="responsive-iframe" src="https://www.youtube.com/embed/3hKg4VaLZEE"></iframe>
 </div>
-<button class="button10" onclick="myFunction12()">Hide player</button>
+<div class="collapsible1"><button   onclick="myFunction()" class="collapsible">Content  </button> <button class="button100" id="btn420" onclick="myFunction12()">hide player</button></div>
+ 
+
+<div class="content12" id="content">
+  <p>Ajink is myname   </p>
+</div>
+
       <h3>How i created this webpage</h3>
    
      <div>
+     <div class="scrollmenu">
 <button class="tablink" onclick="openCity('overview', this, 'grey')" id="defaultOpen">overview</button>
 <button class="tablink" onclick="openCity('QnA', this, 'green')">QnA</button>
 <button class="tablink" onclick="openCity('files', this, 'white')">Files</button>
 <button class="tablink" onclick="openCity('Anouncement', this, 'orange')">Anouncement</button>
-
+</div>
 <div id="overview" class="tabcontent">
  <h3> This is the overview and copy of codewitharry website course page
 
@@ -198,7 +255,7 @@ Any Course related announcements will be posted here
   <div class="column1">
     <div class="card">
       <h3>Course Content</h3>
-      <button  class="button10" onclick="myFunction12()">HIde player</button>
+      
       
       
       <p>This is one video course view complete video </p>
@@ -212,12 +269,20 @@ Any Course related announcements will be posted here
 <script>
 
 function myFunction12() {
+
   var x = document.getElementById("player");
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {
     x.style.display = "none";
   }
+   var y = document.getElementById("btn420");
+  if (y.innerHTML === "hide player") {
+    y.innerHTML = "SHOW PLAYER";
+  } else {
+    y.innerHTML = "hide player";
+  }
+
 }
 
 function openCity(cityName,elmnt,color) {
@@ -233,9 +298,22 @@ function openCity(cityName,elmnt,color) {
   document.getElementById(cityName).style.display = "block";
   elmnt.style.backgroundColor = color;
 
+
 }
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
+
+
+</script>
+<script>
+function myFunction() {
+  var z = document.getElementById("content");
+  if (z.style.display === "none") {
+    z.style.display = "block";
+  } else {
+    z.style.display = "none";
+  }
+}
 </script>
 
 </div>
