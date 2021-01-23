@@ -1,0 +1,140 @@
+.button {
+z-index:1;
+position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+}
+body {
+width:100%;
+margin:0px;
+background:orange;
+}
+#rules{
+display: none;
+z-index:999;
+ position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  
+  padding:5px;
+  left: 5%;
+  top: 5%;
+  bottom:5%;
+  width: 90%; 
+   
+  overflow:auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background:#fff;
+}
+#score{
+display: none;
+z-index:9999999;
+ position: fixed; /* Stay in place */
+  /* Sit on top */
+  
+  padding:5px;
+  left: 5%;
+  top: 5%;
+  bottom:5%;
+  width: 90%; 
+   
+  overflow:auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background:#fff;
+}
+#test{
+display: none;
+
+ position: fixed; /* Stay in place */
+  z-index: 10000; /* Sit on top */
+  
+  padding:5px;
+  left: 5%;
+  top: 5%;
+  bottom:5%;
+  width: 90%; 
+   
+  overflow:auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background:#fff;
+}
+.btn1{
+    font-size: 25px;
+   
+    color: orange;
+    padding: 10px 5px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: #fff;
+    cursor: pointer;
+ position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn12 {
+background-color: orange;
+  border: none;
+  color: white;
+  padding: 6px 10px;
+  text-decoration: none;
+  font-size:20px;
+  font-weight:bold;
+  margin: 4px 2px;
+  cursor: pointer;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:300,600);
+
+h1{
+  font-weight: 300;
+  margin: 0px;
+  padding: 10px;
+  font-size: 20px;
+  background-color: #444;
+  color: #fff;
+}
+.question{
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.answers {
+  margin-bottom: 20px;
+  text-align: left;
+  display: inline-block;
+}
+.answers label{
+  display: block;
+  margin-bottom: 10px;
+}
+
+
+.slide{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.active-slide{
+  opacity: 1;
+  z-index: 2;
+}
+.quiz-container{
+  position: relative;
+  height: 200px;
+  margin-top: 40px;
+}
