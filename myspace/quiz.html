@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>jee mains important differentiation topics</title>
+
+</head>
+<body>
+<div class="mainscreen">
+<button class="btn1" onclick="myFunction()">Start test</button>
+ <div id="rules">
+ <h3>Rules</h3>
+ <b>
+1. You will have only 2 minutes per each question.<br>
+2. Once you select your answer, it can't be undone.<br>
+3. You can't select any option once time goes off.<br>
+4. You can't exit from the exam while you're playing.<br>
+5. You'll get points on the basis of your correct answers.<br>
+</b>
+<button class="btn12" onclick="myFunction12()">Quit</button>
+<button style="float:right;"class="btn12" onclick="myFunction13()">start</button>
+  </div>
+</div>
+<div id="test">
+Time remaining:
+<hr>
+</div>
+</body>
+</html>
+<style>
+body {
+width:100%;
+margin:0px;
+background:orange;
+}
+#rules{
+display: none;
+z-index:999;
+ position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  
+  padding:5px;
+  left: 5%;
+  top: 5%;
+  bottom:5%;
+  width: 90%; 
+   
+  overflow:auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background:#fff;
+}
+#test{
+display: none;
+
+ position: fixed; /* Stay in place */
+  z-index: 10000000; /* Sit on top */
+  
+  padding:5px;
+  left: 5%;
+  top: 5%;
+  bottom:5%;
+  width: 90%; 
+   
+  overflow:auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background:#fff;
+}
+.btn1{
+    font-size: 25px;
+   
+    color: orange;
+    padding: 10px 5px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: #fff;
+    cursor: pointer;
+ position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn12 {
+background-color: orange;
+  border: none;
+  color: white;
+  padding: 6px 10px;
+  text-decoration: none;
+  font-size:20px;
+  font-weight:bold;
+  margin: 4px 2px;
+  cursor: pointer;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+</style>
+<script>
+function myFunction() {
+  document.getElementById("rules").style.display = "block";
+}
+function myFunction12() {
+  document.getElementById("rules").style.display = "none";
+}
+function myFunction13() {
+  document.getElementById("test").style.display = "block";
+}
+</script>
