@@ -89,20 +89,22 @@ document.getElementById("btn12").addEventListener("click", function(){
       // if answer is correct
       if(userAnswer === currentQuestion.correctAnswer){
         // add to the number of correct answers
-        numCorrect++;
+        numCorrect=numCorrect+4;
 
         // color the answers green
         answerContainers[questionNumber].style.color = 'lightgreen';
       }
+     
       // if answer is wrong or blank
       else{
+ 
         // color the answers red
         answerContainers[questionNumber].style.color = 'red';
       }
     });
 
     // show number of correct answers out of total
-    resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
+    resultsContainer.innerHTML = `${numCorrect} out of ${20}`;
   }
 
   function showSlide(n) {
@@ -139,30 +141,52 @@ document.getElementById("btn12").addEventListener("click", function(){
   const submitButton = document.getElementById('submit');
   const myQuestions = [
     {
-      question: "Who invented JavaScript?",
+      question: "<img src='https://www.theajinkgupta.tk/projects/quiz/question1.jpg'>:JEE MAIN 2019 ",
       answers: {
-        a: "Douglas Crockford",
-        b: "Sheryl Sandberg",
-        c: "Brendan Eich"
+        a: "2<sup>20</sup>",
+        b: "2<sup>20</sup>-1",
+        c: "2<sup>20</sup>+1",
+        d: "2<sup>21</sup>"
+      },
+      correctAnswer: "a"
+    },
+    {
+      question: "<img src='https://www.theajinkgupta.tk/projects/quiz/question2.jpg'>",
+      answers: {
+        a: "21",
+        b: "25",
+        c: "27",
+        d: "28"
+      },
+      correctAnswer: "b"
+    },
+    {
+      question: "<img src='https://www.theajinkgupta.tk/projects/quiz/question3.jpg'>",
+      answers: {
+        a: "m=n=78",
+        b: "n=m-8",
+        c: "m+n=68",
+        d: "m=n=68"
+      },
+      correctAnswer: "a"
+    },
+    {
+      question: "<img src='https://www.theajinkgupta.tk/projects/quiz/question4.jpg'>",
+      answers: {
+        a: "306",
+        b: "360",
+        c: "310",
+        d: "288"
       },
       correctAnswer: "c"
     },
     {
-      question: "Which one of these is a JavaScript package manager?",
+      question: "<img src='https://www.theajinkgupta.tk/projects/quiz/question5.jpg'>",
       answers: {
-        a: "Node.js",
-        b: "TypeScript",
-        c: "npm"
-      },
-      correctAnswer: "c"
-    },
-    {
-      question: "Which tool can you use to ensure code quality?",
-      answers: {
-        a: "Angular",
-        b: "jQuery",
-        c: "RequireJS",
-        d: "ESLint"
+        a: "80",
+        b: "60",
+        c: "100",
+        d: "40"
       },
       correctAnswer: "d"
     }
