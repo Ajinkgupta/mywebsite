@@ -1,0 +1,506 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>jee mains important differentiation topics</title>
+	<script src= 
+"https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.5/dist/html2canvas.min.js"> 
+	</script> 
+
+</head>
+<body>
+<div class="mainscreen">
+ <form id="inputname">
+
+        <input type= "text" id="firstname" name="firstname" placeholder="name"> 
+     <input type= "text" id="lastname" name="lastname" placeholder="surname"> <br>
+        <input type = "button" onclick="showName()"  value="submit">
+        
+    </form>
+<button class="btn1" onclick="myFunction()">Start test</button>
+ <div id="rules">
+ <h3>Rules</h3>
+ <b>
+1. You will have only 2 minutes per each question.<br>
+2. Once you select your answer, it can't be undone.<br>
+3. You can't select any option once time goes off.<br>
+4. You can't exit from the exam while you're playing.<br>
+5. You'll get points on the basis of your correct answers.<br>
+</b>
+<button class="btn12" onclick="myFunction12()">Quit</button>
+<button id="btn12" style="float:right;"class="btn12" onclick="myFunction13()">start</button>
+  </div>
+</div>
+<div id="test">
+Time remaining:<span id="countdown"></span>
+<hr>
+
+<div class="quiz-container">
+  <div id="quiz"></div>
+</div>
+
+<div class="button">
+<button id="previous">Previous</button>
+<button id="next">Next </button>
+<button id="submit" onclick="myFunction14()">Submit</button>
+</div></div>
+
+<div id="score">
+<div id="photo"> 
+<center><h2> Name:<span id="show"></span></h2></center>
+<center><h3>Total Marks obtained <div id="results"></div></h3></center>
+<center><h3>percentage obtained<div id="per"></div></h3></center>
+<center><h3>suggestion<div id="suggestion"></div></h3></center>
+<button onclick="takeshot()"> 
+			click
+		</button> 
+</div>
+<h3>click up button and then download below image</h3> 
+	<div id="output"></div> 
+</div> 
+	
+</div>
+<script>
+function myFunction() {
+  document.getElementById("rules").style.display = "block";
+}
+function myFunction12() {
+  document.getElementById("rules").style.display = "none";
+}
+function myFunction13() {
+  document.getElementById("test").style.display = "block";
+}
+function myFunction14() {
+  document.getElementById("score").style.display = "block";
+}
+
+
+document.getElementById("btn12").addEventListener("click", function(){
+    var timeleft = 600;
+
+    var downloadTimer = setInterval(function function1(){
+    document.getElementById("countdown").innerHTML = timeleft + 
+    "&nbsp"+"seconds remaining";
+
+    timeleft -= 1;
+    if(timeleft <= 0){
+        clearInterval(downloadTimer);
+        document.getElementById("countdown").innerHTML = "Time is up!"
+    }
+    }, 1000);
+
+    console.log(countdown);
+});
+
+
+
+(function(){
+  // Functions
+  function buildQuiz(){
+    // variable to store the HTML output
+    const output = [];
+
+    // for each question...
+    myQuestions.forEach(
+      (currentQuestion, questionNumber) => {
+
+        // variable to store the list of possible answers
+        const answers = [];
+
+        // and for each available answer...
+        for(letter in currentQuestion.answers){
+
+          // ...add an HTML radio button
+          answers.push(
+            `<label>
+              <input type="radio" name="question${questionNumber}" value="${letter}">
+              ${letter} :
+              ${currentQuestion.answers[letter]}
+            </label>`
+          );
+        }
+
+        // add this question and its answers to the output
+        output.push(
+          `<div class="slide">
+            <div class="question"> ${currentQuestion.question} </div>
+            <div class="answers"> ${answers.join("")} </div>
+          </div>`
+        );
+      }
+    );
+
+    // finally combine our output list into one string of HTML and put it on the page
+    quizContainer.innerHTML = output.join('');
+  }
+
+  function showResults(){
+
+    // gather answer containers from our quiz
+    const answerContainers = quizContainer.querySelectorAll('.answers');
+
+    // keep track of user's answers
+    let numCorrect = 0;
+
+    // for each question...
+    myQuestions.forEach( (currentQuestion, questionNumber) => {
+
+      // find selected answer
+      const answerContainer = answerContainers[questionNumber];
+      const selector = `input[name=question${questionNumber}]:checked`;
+      const userAnswer = (answerContainer.querySelector(selector) || {}).value;
+
+      // if answer is correct
+      if(userAnswer === currentQuestion.correctAnswer){
+        // add to the number of correct answers
+        numCorrect=numCorrect+4;
+
+        // color the answers green
+        answerContainers[questionNumber].style.color = 'lightgreen';
+      }
+     
+      // if answer is wrong or blank
+      else{
+ 
+        // color the answers red
+        answerContainers[questionNumber].style.color = 'red';
+      }
+    });
+var per=numCorrect*100/20;
+    // show number of correct answers out of total
+    resultsContainer.innerHTML = `${numCorrect} out of ${20}`;
+    percentage.innerHTML = per;
+  }
+ 
+   
+  
+
+  function showSlide(n) {
+    slides[currentSlide].classList.remove('active-slide');
+    slides[n].classList.add('active-slide');
+    currentSlide = n;
+    if(currentSlide === 0){
+      previousButton.style.display = 'none';
+    }
+    else{
+      previousButton.style.display = 'inline-block';
+    }
+    if(currentSlide === slides.length-1){
+      nextButton.style.display = 'none';
+      submitButton.style.display = 'inline-block';
+    }
+    else{
+      nextButton.style.display = 'inline-block';
+      submitButton.style.display = 'none';
+    }
+  }
+
+  function showNextSlide() {
+    showSlide(currentSlide + 1);
+  }
+
+  function showPreviousSlide() {
+    showSlide(currentSlide - 1);
+  }
+
+  // Variables
+  const quizContainer = document.getElementById('quiz');
+  const resultsContainer = document.getElementById('results');
+  const percentage = document.getElementById('per');
+  const submitButton = document.getElementById('submit');
+  const myQuestions = [
+    {
+      question: "<img src='https://www.theajinkgupta.tk/projects/quiz/question1.jpg'>:JEE MAIN 2019 ",
+      answers: {
+        a: "2<sup>20</sup>",
+        b: "2<sup>20</sup>-1",
+        c: "2<sup>20</sup>+1",
+        d: "2<sup>21</sup>"
+      },
+      correctAnswer: "a"
+    },
+    {
+      question: "<img src='https://www.theajinkgupta.tk/projects/quiz/question2.jpg'>",
+      answers: {
+        a: "21",
+        b: "25",
+        c: "27",
+        d: "28"
+      },
+      correctAnswer: "b"
+    },
+    {
+      question: "<img src='https://www.theajinkgupta.tk/projects/quiz/question3.jpg'>",
+      answers: {
+        a: "m=n=78",
+        b: "n=m-8",
+        c: "m+n=68",
+        d: "m=n=68"
+      },
+      correctAnswer: "a"
+    },
+    {
+      question: "<img src='https://www.theajinkgupta.tk/projects/quiz/question4.jpg'>",
+      answers: {
+        a: "306",
+        b: "360",
+        c: "310",
+        d: "288"
+      },
+      correctAnswer: "c"
+    },
+    {
+      question: "<img src='https://www.theajinkgupta.tk/projects/quiz/question5.jpg'>",
+      answers: {
+        a: "80",
+        b: "60",
+        c: "100",
+        d: "40"
+      },
+      correctAnswer: "d"
+    }
+  ];
+
+  // Kick things off
+  buildQuiz();
+
+  // Pagination
+  const previousButton = document.getElementById("previous");
+  const nextButton = document.getElementById("next");
+  const slides = document.querySelectorAll(".slide");
+  let currentSlide = 0;
+
+  // Show the first slide
+  showSlide(currentSlide);
+
+  // Event listeners
+  submitButton.addEventListener('click', showResults);
+  previousButton.addEventListener("click", showPreviousSlide);
+  nextButton.addEventListener("click", showNextSlide);
+})();
+
+
+
+function showName(e){
+    var firstName= document.getElementById("firstname").value;
+    var lastName = document.getElementById("lastname").value;
+    document.getElementById("show").innerText = firstName+" "+lastName;  
+     document.getElementById("inputname").style.display = "none";
+}
+
+if (per >60) {
+  document.getElementById("suggestion").innerHTML = "Good day!";
+}
+else {
+  document.getElementById("suggestion").innerHTML = "good day!";
+}
+
+
+
+
+</script>
+<style>
+img {
+width:90%;
+}
+.answers {
+padding:5px;
+border:2px solid black;
+width:94%;
+}
+label{
+  width:90%;
+  font-size:10px;
+  padding: 10px;
+  border:2px solid black;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  background: #f1f1f1;
+}
+
+button {
+padding:5px;
+font-size:20px;
+font-weight:1000;
+cursor:pointer;
+}
+.button {
+z-index:1;
+position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+}
+body {
+width:100%;
+margin:0px;
+background:orange;
+}
+#rules{
+display: none;
+z-index:999;
+ position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  
+  padding:5px;
+  left: 5%;
+  top: 5%;
+  bottom:5%;
+  width: 90%; 
+   
+  overflow:auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background:#fff;
+}
+#score{
+display: none;
+z-index:9999999;
+ position: fixed; /* Stay in place */
+  /* Sit on top */
+  
+  padding:5px;
+  left: 5%;
+  top: 5%;
+  bottom:5%;
+  width: 90%; 
+   
+  overflow:auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background:#fff;
+}
+#test{
+display: none;
+
+ position: fixed; /* Stay in place */
+  z-index: 10000; /* Sit on top */
+  
+  padding:5px;
+  left: 5%;
+  top: 5%;
+  bottom:50px;
+  width: 90%; 
+   
+  overflow:auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background:#fff;
+}
+.btn1{
+    font-size: 25px;
+   
+    color: orange;
+    padding: 10px 5px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: #fff;
+    cursor: pointer;
+ position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn12 {
+background-color: orange;
+  border: none;
+  color: white;
+  padding: 6px 10px;
+  text-decoration: none;
+  font-size:20px;
+  font-weight:bold;
+  margin: 4px 2px;
+  cursor: pointer;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:300,600);
+
+h1{
+  font-weight: 300;
+  margin: 0px;
+  padding: 10px;
+  font-size: 20px;
+  background-color: #444;
+  color: #fff;
+}
+.question{
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.answers {
+  margin-bottom: 20px;
+  text-align: left;
+  display: inline-block;
+}
+.answers label{
+  display: block;
+  margin-bottom: 10px;
+}
+
+
+.slide{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.active-slide{
+  opacity: 1;
+  z-index: 2;
+}
+.quiz-container{
+  position: relative;
+  height: 200px;
+  margin-top: 40px;
+}
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+input[type=button] {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+<script type="text/javascript"> 
+
+		// Define the function 
+		// to screenshot the div 
+		function takeshot() { 
+			let div = 
+				document.getElementById('photo'); 
+
+			// Use the html2canvas 
+			// function to take a screenshot 
+			// and append it 
+			// to the output div 
+			html2canvas(div).then( 
+				function (canvas) { 
+					document 
+					.getElementById('output') 
+					.appendChild(canvas); 
+				}) 
+		} 
+	</script> 
+</body>
+</html>
