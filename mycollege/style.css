@@ -3,6 +3,15 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
+.card1 {
+
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+  transition: 0.3s;
+
+ 
+
+}
  .heading { font-size: 25px; margin-right: 25px; } .fa { font-size: 25px; } .checked { color: orange; } /* Three column layout */ .side { float: left; width: 15%; margin-top:10px; } .middle { margin-top:10px; float: left; width: 70%; } /* Place text to the right */ .right { text-align: right; } /* Clear floats after the columns */ .row3:after { content: ""; display: table; clear: both; } /* The bar container */ .bar-container { width: 100%; background-color: #f1f1f1; text-align: center; color: white; } /* Individual bars */ .bar-5 {width: 60%; height: 18px; background-color: #4CAF50;} .bar-4 {width: 30%; height: 18px; background-color: #2196F3;} .bar-3 {width: 10%; height: 18px; background-color: #00bcd4;} .bar-2 {width: 4%; height: 18px; background-color: #ff9800;} .bar-1 {width: 15%; height: 18px; background-color: #f44336;} /* Responsive layout - make the columns stack on top of each other instead of next to each other */ @media (max-width: 400px) { .side, .middle { width: 100%; } .right { display: none; } }
 input[type=text], select, textarea { width: 100%; padding: 12px; border: 1px solid #ccc; margin-top: 6px; margin-bottom: 16px; resize: vertical; } input[type=submit] { background-color: #4CAF50; color: white; padding: 12px 20px; border: none; cursor: pointer; } input[type=submit]:hover { background-color: #45a049; } .container { border-radius: 5px; background-color: white; padding: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); } .column1 { float: left; width: 50%; margin-top: 6px; padding: 20px; } .row1:after { content: ""; display: table; clear: both; } @media screen and (max-width: 600px) { .column1, input[type=submit] { width: 100%; margin-top: 0; } }
 * { box-sizing: border-box; } .column { float: left; width: 30%; padding: 0 10px; } .row:after { content: ""; display: table; clear: both; } @media screen and (max-width: 600px) { .column { width: 50%; display: block; margin-bottom: 20px; } } .card { box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); background-color: #f1f1f1; }
