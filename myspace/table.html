@@ -1,0 +1,50 @@
+<table border="2" width="100%">
+<form action="mailto:guptaajink21@gmail.com" method="post" enctype="text/plain">
+<tr><th>NAME:</th></tr>
+<tr><td><input type="text" name="name" required placeholder="your name here"></td></tr>
+<tr><th>Email:</th></tr>
+<tr><td><input type="email" required name="email" placeholder="your email here"></td></tr>
+<tr><th>gender:</th></tr>
+<tr><td> 
+
+<input type="radio" id="male" name="gender" required value="male">
+<label for="male">Male</label><br>
+<input type="radio" id="female" name="gender" value="female">
+<label for="female">Female</label><br>
+<input type="radio" id="other" name="gender" value="other">
+<label for="other">Other</label>
+
+</td></tr>
+<tr><th>qoualified exams:</th></tr>
+<tr><td> 
+
+<input type="radio" required  name="qoualified exam" value="1">
+<label>state board exam</label><br>
+<input type="radio" name="qoualified exam" value="2">
+<label>Cbse</label><br>
+<input type="radio" name="qoualified exam"value="3">
+<label for="other">igse</label>
+
+</td></tr>
+<tr><th> percentage in qualified exam:</th></tr>
+<tr><td><input type="text" name="percentage" placeholder="your presentage here"></td></tr>
+<tr><th>message:</th></tr>
+<tr><td> 
+<textarea type="text" name="message"></textarea>
+</td></tr>
+<tr><td><center><input type="submit"></center></td></tr>
+</form>
+</table>
+<style>
+input[type=text],[type=email]{
+width:100%;
+border:2px solid black;
+padding:10px;
+}
+textarea[type=text]{
+width:100%;
+border:2px solid black;
+padding:10px;
+height:100px;
+}
+</style>
