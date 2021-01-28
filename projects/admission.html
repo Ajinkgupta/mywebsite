@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>Admission Form</title>
+  <style>
+  * {box-sizing: border-box;}
+    body{
+      margin:0px;
+    }
+    form{
+      border:2px solid orange;
+      padding: 10px;
+      font-size: 20px;
+      font-weight: bold;
+      background-image: url(https://img.freepik.com/free-vector/abstract-blue-geometric-shapes-background_1035-17545.jpg);
+    }
+    input[type=text],input[type=email],input[type=number],input[type=date],textarea{
+      width:100%;
+      border:2px solid black;
+      padding: 10px;
+background-color: rgb(233, 213, 38);
+    }
+    select {
+      width:100%;
+      border:2px solid black;
+      padding: 10px;
+      background-color: aquamarine;
+    }
+    input[type=submit]{
+padding: 5px;
+font-size: 30px;
+padding-left: 20px;
+padding-right: 20px;
+background-color: orange;
+border:2px solid black;
+    }
+  </style>
+</head>
+<body onload="myFunction()">
+  <table width="100%" border="2px">
+    <tr>
+      <th><img src="https://www.theajinkgupta.tk/mycollege/mycollege.jpg" width="auto" height="60px" align="left" border="2px" style=" border-radius:50%;"> </th>
+     <td> <h1>prgati college</h1></td>
+    </tr>
+    
+  </table>
+  <table width="100%" border="2px">
+    <tr>
+      <th>online registration form for students</th>
+    
+    </tr>
+  
+  </table>
+  <table width="100%" border="2px">
+    <tr>
+      <td> 
+
+<form action="mailto:prgaticollege@mycollege.com" method="post" enctype="text/plain">
+<label for="name"> your complete name</label>
+<input type="text" name="name" ><br>
+<label for="name"> fathers name</label>
+<input type="text" name="father name" ><br>
+<label for="name">mothers name</label>
+<input type="text" name="mother" ><br>
+
+<label for="email"> your email</label>
+<input type="email" name="email"><br>
+<label for="mobile"> your mobile</label>
+<input type="number" name="mobile" maxlength="10"  required >
+<br>
+<label for="DOB"> date of birth</label>
+<input type="date" name="DOB" 
+placeholder="dd-mm-yyyy" value=""
+min="1997-01-01" max="2008-12-31" required> 
+
+<br>
+<label for="place">place of birth</label>
+<input type="text" name="place" >
+<br>
+<label for="Nationality"> Nationality</label>
+<select  name="Nationality">
+  <option value="indian" aria-required="true">Indian</option>
+  <option value="NRI">NRI</option>
+  <option value="foreigner">Forigner</option>
+</select>
+<br>
+<label for="GENDER"> gender</label>
+<input type="radio" name="GENDER" value="male" id=""><label for="male">male</label>
+<input type="radio" name="GENDER" value="female" id=""><label for="female"> female</label>
+<input type="radio" name="GENDER" value="other" id=""><label for="other">other</label>
+
+
+<br>
+<label for="address"> address</label>
+<textarea name="address" id="" cols="30" rows="10"></textarea> <br>
+
+<label for="pincode">pincode</label>
+<input name="pincode" type="text" input="number" maxlength="6">
+<br>
+<h2> appliying for</h2>
+<label>   
+  course
+  </label>   
+  <select name="courses">  
+  <option value="Course">Course</option>  
+  <option value="BCA">BCA</option>  
+  <option value="BBA">BBA</option>  
+  <option value="BCOM">bcom</option>  
+  <option value="MBA">MBA</option>  
+  <option value="MCA">MCA</option>  
+  <option value="BSC">BSc</option>  
+  </select>  
+    <br>
+<hr>
+<input type="submit" value="send">
+</form>
+
+
+
+      </td>
+    
+    </tr>
+  
+  </table>
+  <table width="100%" border="2px">
+    <tr>
+      <th>created by AJINK &copy; 2021 
+
+      </th>
+      <tr>
+
+      </tr>
+    <td>note: this is demo </td>
+    </tr>
+  
+  </table>
+  <script>
+    function myFunction() {
+      alert("this is demo");
+    }
+    </script>
+</body>
+</html>
