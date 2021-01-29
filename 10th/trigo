@@ -1,0 +1,338 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> TheAjinkGupta </title>
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@ajinkgupta">
+<meta name="twitter:title" content="The ajink Gupta">
+<meta name="twitter:description" content="this is proffesional website which provides your various tools for free , thankyou">
+ <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <meta name="description" content=" welcome to my website this is  a portfolio website "/>
+  <link rel="canonical" href="https://www.theajinkgupta.tk/index.html" />
+  <meta name="keywords" content="Ajink GUpta , the ajink gupta, welcome to ajink gupta, free web tools"/>
+  <meta name="robots" content="index,follow"/>
+  <meta name="author" content="theajinkgupta.tk"/>
+   <meta property="og:site_name" content="theajinkgupta.tk">
+  <meta property="og:title" content="Ajink GUpta , the ajink gupta, welcome to ajink gupta, free web tools">
+  <meta property="og:description" content="welcome to my website this is  a portfolio website">
+  <meta property="og:url" content="https://www.theajinkgupta.tk/index.html">
+  <meta property="og:image" content="https://www.theajinkgupta.tk/files/Ajink.jpeg">
+  <meta property="og:type" content="Website">
+  
+<link rel="icon" type="image/png" sizes="32x32" href="https://www.theajinkgupta.tk/files/favicon-32x32.png">
+
+<link rel="icon" type="image/png" sizes="16x16" href="https://www.theajinkgupta.tk/files/favicon-16x16.png">
+  
+</head>
+<body>
+ 
+<div class="content">
+  <div class="content200">
+  
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/* Float four columns side by side */
+.column12 {
+  float: left;
+  width: 75%;
+  padding: 0 10px;
+}
+.column1 {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (min-width: 600px) {
+.collapsible {
+display:none;
+}
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+
+
+  .column1 {
+    width: 100%;
+    display: none;
+    margin-bottom: 20px;
+  }
+  .column12 {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+  
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 10px 0px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+.container12 {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+
+.tablink {
+  background-color: silver;
+  color: black;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 0px;
+  font-size: 15px;
+  width:25%;
+  font-weight:bold;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content */
+.tabcontent {
+ 
+  display: none;
+  padding: 50px;
+  text-align: center;
+}
+
+.btn122 {
+border:1px solid black;
+padding:5px;
+font-size:15px;
+width:100%;
+}
+.collapsible {
+
+  color: white;
+  cursor: pointer;
+  padding:5px;
+background:orange;
+font-size:20px;
+font-weight:bold;
+border:1px solid red;
+  
+  
+  
+}
+.collapsible1 {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  
+}
+
+
+.content12 {
+  padding: 0 18px;
+
+  overflow: hidden;
+  background-color: orange;
+}
+#content {
+display: none;
+}
+.button100 {
+padding:5px;
+background:orange;
+font-size:20px;
+font-weight:bold;
+border:1px solid red;
+float:right;
+}
+
+</style>
+<header> <h1 align="center"> WE love pawan wagh academy</h1></header>
+
+<div class="row">
+<br>
+  <div class="column12">
+    <div class="card">
+    
+<div class="container12" id="player"> 
+  <iframe class="responsive-iframe" id="myFrame" src="https://youtube.com/embed/pn1vH9NdxAw"></iframe>
+</div>
+<div class="collapsible1"><button   onclick="myFunction()" class="collapsible">Content  </button> <button class="button100" id="btn420" onclick="myFunction12()">hide player</button></div>
+ 
+
+<div class="content12" id="content">
+ <h3>trigonometry 10th maths pawan wagh academy</h3>
+<button class="btn122" onclick="document.getElementById('myFrame').src = 'https://www.youtube.com/embed/pn1vH9NdxAw';">Trigonometry practise set 6.1 class 10th maharshtra board </button> 
+<button class="btn122" onclick="document.getElementById('myFrame').src = 'https://www.youtube.com/embed/QrBgEKCr4Kk';">Trigonometry practise set 6.1 class 10th maharshtra board part 2 </button> 
+<button class="btn122" onclick="document.getElementById('myFrame').src = 'https://www.youtube.com/embed/d8uFbo4DsPw';">Trigonometry practise set 6.2 class 10th maharshtra board </button> 
+<button class="btn122" onclick="document.getElementById('myFrame').src = 'https://www.youtube.com/embed/ZZMvehltgVU';">Trigonometry problem set 6 class 10th maharshtra board </button> 
+<button class="btn122" onclick="document.getElementById('myFrame').src = 'https://www.youtube.com/embed/J9yhlppyUJI';">Trigonometry problem set 6 class 10th maharshtra board part 2 </button> 
+<button class="btn122" onclick="document.getElementById('myFrame').src = 'https://www.youtube.com/embed/eH5HpXHa9H0';">Trigonometry problem set 6 class 10th maharshtra board part 3 </button>
+
+
+<div class="g-ytsubscribe" data-channelid="UC5gOpsfmy_Rk2-mZBoO4_Aw" data-layout="full" data-count="default"></div>
+</div>
+
+      <h3>learn complete trigonometry</h3>
+   
+<script src="https://apis.google.com/js/platform.js"></script>
+<div class="g-ytsubscribe" data-channelid="UCM75YqEHqzuFHPmLVMdzNDQ" data-layout="full" data-count="default"></div>
+<br>
+     <div>
+     <div class="scrollmenu">
+<button class="tablink" onclick="openCity('overview', this, 'grey')" id="defaultOpen">overview</button>
+<button class="tablink" onclick="openCity('QnA', this, 'green')">QnA</button>
+<button class="tablink" onclick="openCity('files', this, 'white')">Notes</button>
+<button class="tablink" onclick="openCity('Anouncement', this, 'orange')">Doubts</button>
+</div>
+<div id="overview" class="tabcontent">
+ <h3> i will update content on regular basis here </h3>
+ here you can zoom website to see clearly 
+
+</div>
+
+<div id="QnA" class="tabcontent">
+ <h3>Post a comment</h3>
+ <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v9.0" nonce="rN4XnqlU"></script>
+<div class="fb-comments" data-href="https://theajinkgupta.tk" data-width="auto" data-numposts="5"></div>
+</div>
+
+<div id="files" class="tabcontent">
+ <h3>Resources</h3>
+ <h4>No downloadable resources for this video. If you think you need anything, please post it in the QnA!</h4>
+ 
+
+<div class="g-ytsubscribe" data-channelid="UC5gOpsfmy_Rk2-mZBoO4_Aw" data-layout="full" data-count="default"></div>
+
+</div>
+
+<div id="Anouncement" class="tabcontent">
+<h3>post your doubts with help of below google form</h3>
+<h4>
+<a href='https://forms.gle/KLvm9heTDQVJwNYQ7'>Click this link to ask doubts</a>
+</h4>
+</div>
+</div>
+  </div>
+  </div>
+
+
+  <div class="column1">
+    <div class="card">
+      <h3>trigonometry 10th maths pawan wagh academy</h3>
+<button class="btn122" onclick="document.getElementById('myFrame').src = 'https://www.youtube.com/embed/pn1vH9NdxAw';">Trigonometry practise set 6.1 class 10th maharshtra board </button> 
+<button class="btn122" onclick="document.getElementById('myFrame').src = 'https://www.youtube.com/embed/QrBgEKCr4Kk';">Trigonometry practise set 6.1 class 10th maharshtra board part 2 </button> 
+<button class="btn122" onclick="document.getElementById('myFrame').src = 'https://www.youtube.com/embed/d8uFbo4DsPw';">Trigonometry practise set 6.2 class 10th maharshtra board </button> 
+<button class="btn122" onclick="document.getElementById('myFrame').src = 'https://www.youtube.com/embed/ZZMvehltgVU';">Trigonometry problem set 6 class 10th maharshtra board </button> 
+<button class="btn122" onclick="document.getElementById('myFrame').src = 'https://www.youtube.com/embed/J9yhlppyUJI';">Trigonometry problem set 6 class 10th maharshtra board part 2 </button> 
+<button class="btn122" onclick="document.getElementById('myFrame').src = 'https://www.youtube.com/embed/eH5HpXHa9H0';">Trigonometry problem set 6 class 10th maharshtra board part 3 </button> 
+
+
+<div class="g-ytsubscribe" data-channelid="UC5gOpsfmy_Rk2-mZBoO4_Aw" data-layout="full" data-count="default"></div>
+    </div>
+  </div>
+  
+  
+  
+  </div>
+</div>
+<script>
+
+function myFunction12() {
+
+  var x = document.getElementById("player");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+   var y = document.getElementById("btn420");
+  if (y.innerHTML === "hide player") {
+    y.innerHTML = "SHOW PLAYER";
+  } else {
+    y.innerHTML = "hide player";
+  }
+
+}
+
+function openCity(cityName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(cityName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+
+
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
+
+</script>
+<script>
+function myFunction() {
+  var z = document.getElementById("content");
+  if (z.style.display === "none") {
+    z.style.display = "block";
+  } else {
+    z.style.display = "none";
+  }
+}
+</script>
+
+</div>
+</body>
+</html>
