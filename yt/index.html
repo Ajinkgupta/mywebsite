@@ -1,15 +1,30 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Page Title</title>
+<title>AJINK GUPTA YT</title>
 <meta charset="UTF-8">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 /* Style the body */
 body {
   font-family: Arial;
   margin: 0;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 999999;
+  outline: none;
+background:none;
+  color: white;
+  cursor: pointer;
 }
 
 /* Header/Logo Title */
@@ -95,6 +110,8 @@ padding:20px;
 <div class="content">
 <marquee> welcome to The Ajink Gupta Website</marquee>
 </div>
+
+<a onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-circle-up" style="font-size:50px;color:black"></i></a>
 <hr>
 <div class="content">
 
@@ -125,5 +142,26 @@ padding:20px;
 <h1> &copy;2021</h1>
 </center>
 </footer>
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
 </body>
 </html>
