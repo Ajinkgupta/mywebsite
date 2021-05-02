@@ -1,97 +1,158 @@
-
 <!DOCTYPE html>
-<html>
-<head><script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-/* Float four columns side by side */
-.column {
-  float: left;
-  width: 50%;
-  padding: 0 10px;
-}
-
-/* Remove extra left and right margins, due to padding */
-.row {margin: 0 -5px;}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive columns */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
-}
-
-/* Style the counter cards */
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 16px;
-  text-align: center;
-  background-color: white;
-}
-</style>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://brainiak.in/qa-theme/Donut-theme/css/bootstrap.min.css?3.3.5">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 </head>
+<body>
+
+<style>
+   .bg-light{background-color:#FFFFE0!important}
+   .font-weight-bold{font-weight:700!important}
+   .headingbrainiak{
+  background-image: linear-gradient(to right, #ffbe31 0%, #200dcec4 51%, #FF512F 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.col-sm-4{margin-top: 20px;}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius:10px;
+  max-width: 300px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.button123 {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 5px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button123 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button123 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button123:hover span {
+  padding-right: 25px;
+}
+
+.button123:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+   </style>
 
 
+
+
+
+
+    <div class="bg-light">
+        <div class="container">
+        
+        <div class="row align-items-center no-gutters">
+        <div class="col-xl-5 col-lg-6 col-md-12">
+        <div class="py-5 py-lg-0"><br><br>
+        <h1 class="display-4 font-weight-bold headingbrainiak">Welcome to Brainiak Educational Platform
+        </h1>
+        <p class="mb-4 lead">
+        Ask and get answer instantly , clear doubts with Video contents , and get free doubt lectures on demand .
+        </p>
+        <a href="#brainiakindia" class="btn btn-success">Explore</a>
+        
+        </div>
+        </div>
+        <div class=" col-xl-7 col-lg-6 col-md-12 text-lg-right text-center">
+        <img src="https://raw.githubusercontent.com/Ajinkgupta/mywebsite/main/Img/1619949976400.png" alt="Brainiak India" class="img-fluid" style="height: 400px;"><h2 style="color:orange;">Brainiak India</h2>
+        </div>
+        </div>
+        </div>
+        </div>
+    <center> 
+        <div style="background-color: #dcfffd;">
+        <div class="container">
+      
+        <div class="row">
+            <div class="col-sm-4  headingbrainiak" style="font-size: 20px;font-weight:  bolder; padding: 20px;" > 5K+ monthly visitors </div>
+            <div class="col-sm-4  headingbrainiak" style="font-size: 20px;font-weight:  bolder; padding: 20px;">Instant Doubt Solving </div>
+            <div class="col-sm-4  headingbrainiak" style="font-size: 20px;font-weight:  bolder; padding: 20px;">Video library of concepts</div>
+          </div>
+        </div>
+    </div>
+
+<div id="brainiakindia" style="padding: 20px;">
+   <center><div class="headingbrainiak" style="font-size: 21px;font-weight:  bolder; padding: 20px;" > What makes us best? </div></center> 
+
+<div class="container">
 <div class="row">
-  <div class="column">
+   <div class="col-sm-4"> 
+
     <div class="card">
-      <h2>Geometric mean theorem&nbsp;</h2>
+        <img src="https://raw.githubusercontent.com/Ajinkgupta/mywebsite/main/Img/1619949976400.png" alt="Avatar" style="width:100%;border-radius:10px;">
+        <div style="padding:10px;">
+          <h4><b>John Doe</b></h4> 
+          <p>Architect & Engineer</p> 
+         <center><button class="button123" style="vertical-align:middle"><span>Hover </span></button></center> 
+      
+        </div>
+      </div>
 
-<blockquote>
-<p>This theorem describes the relationship between altitude drawn on the hypotenuse from vertex of the right angle and the segments into which hypotenuse is divided by altitude.</p>
-</blockquote>
-
-<p><img alt="" src="https://1.bp.blogspot.com/-Hh3bbQRpIJc/YI1oxyLBkfI/AAAAAAAABcs/b2aI4yDfUGcPVyib8bZT57nXYFCZS4vDQCLcBGAsYHQ/s219/1.png" style="height:211px; width:199px" /></p>
-
-<blockquote>
-<p><span class="math-tex">\(BD^2=AD\times DC\)</span></p>
-</blockquote>
-
+   </div> 
+        <div class="col-sm-4">   <div class="card">
+            <img src="https://raw.githubusercontent.com/Ajinkgupta/mywebsite/main/Img/1619949976400.png" alt="Avatar" style="width:100%;border-radius:10px;">
+            <div style="padding:10px;">
+              <h4><b>John Doe</b></h4> 
+              <p>Architect & Engineer</p> 
+             <center><button class="button123" style="vertical-align:middle"><span>Hover </span></button></center> 
+          
+            </div>
+          </div>
+      </div>
+        <div class="col-sm-4">    <div class="card">
+            <img src="https://raw.githubusercontent.com/Ajinkgupta/mywebsite/main/Img/1619949976400.png" alt="Avatar" style="width:100%;border-radius:10px;">
+            <div style="padding:10px;">
+              <h4><b>John Doe</b></h4> 
+              <p>Architect & Engineer</p> 
+             <center><button class="button123" style="vertical-align:middle"><span>Hover </span></button></center> 
+          
+            </div>
+          </div>
+      </div>
     </div>
-  </div>
-
-  <div class="column">
-    <div class="card">
-    
-<p>&nbsp;Proof&nbsp;</p>
-
-<p><img alt="" src="https://1.bp.blogspot.com/-Hh3bbQRpIJc/YI1oxyLBkfI/AAAAAAAABcs/b2aI4yDfUGcPVyib8bZT57nXYFCZS4vDQCLcBGAsYHQ/s219/1.png" style="height:219px; width:219px" /></p>
-
-<p>We know, △ADB ~ △ABC</p>
-
-<p>Therefore, <span class="math-tex">\(\tfrac{AD}{AB}=\tfrac{AB}{AC} \)</span>(corresponding sides of similar triangles)<br>
-AB<SUP>2</SUP>=AD×AC
-<br>........1<br><br>
-but , 
-AB<SUP>2</SUP>=AD<SUP>2</SUP>+BD<SUP>2</SUP><br> <br>by pythagoras theorem<br>
-<br>
-AD<SUP>2</SUP>+BD<SUP>2</SUP> =AD×AC <br><br>
-BD<SUP>2</SUP> =AD×AC -AD<SUP>2</SUP><br><br>
-BD<SUP>2</SUP>=AD(AC-AD)<br><br>
-AC-AD=DC  <br>
-<br>BD<SUP>2</SUP>=AD×DC
-    </div>
-  </div>
+</div>
 
 </div>
+</center> 
 
 </body>
 </html>
