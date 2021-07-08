@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<!-- This snippet uses Font Awesome 5 Free as a dependency. You can download it at fontawesome.io! -->
+
+<body>
+<div class="container">
+            <div class="col-md-6 col-md-offset-3 col-xs-12">
+                <!-- @ Start login box wrapper -->
+                <div class="blmd-wrapp">
+                    <div class="blmd-color-conatiner ripple-effect-All"></div>
+                    <div class="blmd-header-wrapp ">
+                        <div class="blmd-switches">
+                             <button class="btn btn-circle btn-lg btn-blmd ripple-effect btn-success blmd-switch-button">
+                                <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                    <path fill="#fff" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" />
+                                 </svg>
+                              </button>
+                        </div> 
+                        
+                    </div> 
+                    <div class="blmd-continer">
+                        <!-- @ Login form container -->
+                        <form action="post" class="clearfix" id="login-form">
+                            <h1>Login Page</h1>
+                            <div class="col-md-12">
+                                
+                                <div class="input-group blmd-form">
+                                    <div class="blmd-line">
+                                        <input type="text" name="username" autocomplete="off" id="username" class="form-control">
+                                        <label class="blmd-label">Email or Username</label>
+                                    </div>
+                                </div>
+                                <div class="input-group blmd-form">
+                                    <div class="blmd-line">
+                                        <input type="password" name="password" autocomplete="off" id="password" class="form-control">
+                                        <label class="blmd-label">Password</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 text-center">
+                                <button type="button" class="btn btn-blmd ripple-effect btn-success btn-lg btn-block">Login</button>
+                            </div>
+                            <br/>
+                        </form>
+                        <!-- @ Login form container -->
+                        <form action="post" class="clearfix form-hidden" id="Register-form">
+                            <h1>Register Page</h1>
+                            <div class="col-md-12">
+                                
+                                <div class="input-group blmd-form">
+                                    <div class="blmd-line">
+                                        <input type="text" name="username" autocomplete="off" id="username" class="form-control">
+                                        <label class="blmd-label">Email or Username</label>
+                                    </div>
+                                </div>
+                                <div class="input-group blmd-form">
+                                    <div class="blmd-line">
+                                        <input type="password" name="password" autocomplete="off" id="password" class="form-control">
+                                        <label class="blmd-label">Password</label>
+                                    </div>
+                                </div>
+                                 <div class="input-group blmd-form">
+                                    <div class="blmd-line">
+                                        <input type="password" name="rePassword" autocomplete="off" id="password" class="form-control">
+                                        <label class="blmd-label">Repeat Password</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 text-center">
+                                <button type="button" class="btn btn-blmd ripple-effect btn-warning btn-lg btn-block">Register</button>
+                            </div>
+                            <br/>
+                        </form>
+                    </div>
+                </div>
+                <div class="signature" style="margin-left: -25px;margin-top: -25px;">
+                    <svg fill="#888" width="120" height="120" viewBox="0 0 595.28 841.89" enable-background="new 0 0 595.28 841.89" style="text-align: center;transform: rotate(-16deg);">
+                        <g>
+                            <path d="M133.165,507.429c0.504,0.573,0.928,0.827,0.95,1.112c0.466,6.043,5.137,6.735,9.595,7.253
+                                c16.6,1.927,31.618-1.682,43.636-13.897c8.28-8.416,11.527-18.623,8.182-30.239c-2.682-9.316-10.274-14.286-18.566-17.154
+                                c-11.13-3.849-22.657-6.753-34.205-9.139c-18.56-3.835-37.292-6.903-55.123-13.591c-14.859-5.573-27.477-14.123-35.803-28.109
+                                c-6.422-10.788-8.19-22.616-7.976-34.899c0.547-31.515,14.938-56.913,36.352-78.497c34.017-34.288,75.522-54.583,123.055-62.527
+                                c16.874-2.82,33.828-3.029,50.478,1.597c12.248,3.403,22.691,9.51,27.35,22.232c3.851,10.514,3.527,21.044-1.342,31.276
+                                c-5.63,11.833-14.179,21.375-23.743,30.104c-0.533,0.486-1.398,0.608-2.108,0.899c-0.186-0.294-0.371-0.588-0.557-0.882
+                                c1.833-2.118,3.742-4.175,5.487-6.363c6.57-8.242,12.618-16.841,14.832-27.381c2.991-14.239-3.203-26.132-16.46-32.1
+                                c-12.274-5.525-25.342-6.15-38.513-6.05c-34.227,0.26-66.112,9.165-95.414,26.723c-27.584,16.528-49.544,38.67-63.946,67.69
+                                c-6.039,12.169-9.712,24.962-8.839,38.919c1.111,17.745,10.499,29.629,25.255,38.115c13.101,7.535,27.726,10.274,42.257,13.279
+                                c16.842,3.484,33.785,6.548,50.49,10.595c6.785,1.643,13.376,4.835,19.502,8.3c13.728,7.764,18.12,20.275,16.167,35.371
+                                c-3.163,24.453-18.927,37.805-40.765,45.465c-8.353,2.93-16.936,5.38-25.993,3.735c-1.813-0.33-3.663-0.939-5.27-1.828
+                                c-3.457-1.912-7.011-4.374-6.613-8.731C125.962,513.846,128.897,510.086,133.165,507.429z"/>
+                            <path d="M334.315,500.177c1.253-2.301,2.695-4.52,3.727-6.916c5.869-13.625,11.457-27.375,17.539-40.903
+                                c2.276-5.062,5.065-10.11,8.609-14.336c5.631-6.716,14.911-4.573,17.071,3.91c1.366,5.367,1.68,11.096,1.772,16.674
+                                c0.234,14.237,0.078,28.481,0.633,43.054c0.61-1.203,1.333-2.362,1.814-3.614c5.451-14.195,10.711-28.466,16.376-42.575
+                                c1.836-4.573,4.475-8.881,7.169-13.036c2.276-3.51,6.06-3.734,9.759-2.757c3.568,0.942,6.347,3.056,7.16,6.898
+                                c0.409,1.935,0.482,3.953,0.581,5.94c0.745,14.961,1.512,29.921,2.158,44.886c0.269,6.225,3.091,10.915,7.96,14.56
+                                c0.389,0.291,0.723,0.659,1.062,1.011c0.072,0.075,0.051,0.239,0.073,0.362c-4.641,4.902-15.39,3.443-18.464-3.124
+                                c-2.113-4.514-3.37-9.69-3.797-14.674c-0.777-9.068-0.611-18.214-0.921-27.325c-0.166-4.865-0.361-9.739-0.856-14.577
+                                c-0.144-1.407-1.367-2.704-2.095-4.051c-1.198,0.918-2.97,1.584-3.5,2.794c-3.045,6.955-5.887,14.003-8.626,21.086
+                                c-4.538,11.735-8.87,23.55-13.47,35.26c-0.989,2.516-2.429,5.033-4.267,6.977c-1.269,1.342-3.693,2.493-5.39,2.251
+                                c-1.438-0.205-3.338-2.358-3.695-3.949c-0.891-3.981-1.36-8.129-1.398-12.216c-0.148-15.749-0.057-31.501-0.066-47.251
+                                c-0.001-1.374,0.251-2.874-0.211-4.089c-0.568-1.493-1.511-3.474-2.756-3.905c-1.281-0.444-3.652,0.243-4.6,1.291
+                                c-1.707,1.886-2.926,4.315-3.967,6.685c-7.527,17.121-14.903,34.31-22.48,51.408c-1.191,2.688-2.833,5.342-4.839,7.471
+                                c-4.423,4.692-10.264,3.335-11.486-2.949c-1.06-5.447-0.775-11.158-1.059-16.753c-0.06-1.182-0.009-2.369-0.009-4.089
+                                c-3.65,5.198-6.668,10.023-10.215,14.421c-4.759,5.9-10.541,10.64-17.927,13.008c-10.362,3.322-20.506-0.455-26.229-9.716
+                                c-0.769-1.244-1.453-2.54-2.065-3.617c-4.55,3.71-8.829,7.476-13.399,10.848c-5.045,3.723-10.941,5.352-17.159,5.788
+                                c-8.742,0.613-17.089-5.018-20.809-14.233c-5.482-13.578-3.583-26.715,3.036-39.32c8.684-16.538,21.262-28.678,40.029-32.79
+                                c9.863-2.161,19.674-1.242,28.559,4.163c2.076,1.263,3.95,3.09,5.439,5.025c1.69,2.197,3.073,4.856,0.101,7.249
+                                c-3.04,2.448-7.498,2.256-9.808-0.321c-1.415-1.579-2.685-3.309-4.229-4.747c-8.22-7.652-19.703-8.905-30.497-2.423
+                                c-15.971,9.591-24.454,23.903-24.319,42.739c0.073,10.225,6.153,19.001,14.436,21.059c10.101,2.51,18.727-0.571,25.721-8.127
+                                c0.724-0.782,0.754-2.476,0.654-3.71c-0.785-9.607-1.567-19.232,1.803-28.527c0.954-2.632,2.382-5.307,4.262-7.344
+                                c3.868-4.189,9.08-2.894,9.994,2.713c0.723,4.436,0.716,9.318-0.38,13.645c-1.543,6.094-4.147,11.97-6.797,17.709
+                                c-1.16,2.513-1.133,4.282,0.278,6.506c5.203,8.2,18.152,11.001,27.878,5.802c9.371-5.01,15.559-13.14,20.876-22
+                                c0.763-1.271,0.734-3.134,0.74-4.724c0.054-13.5,0.011-27.001,0.041-40.501c0.013-5.744,0.84-11.922-8.372-11.987
+                                c-0.116-0.517-0.233-1.034-0.349-1.552c1.177-0.638,2.342-1.301,3.535-1.909c2.442-1.245,4.899-2.461,7.349-3.69
+                                c4.245-2.13,7.749-1.051,9.122,3.443c1.041,3.405,1.581,7.098,1.58,10.663c-0.007,20.24-0.263,40.48-0.372,60.721
+                                c-0.011,2.007,0.396,4.016,0.608,6.025C333.395,499.987,333.855,500.082,334.315,500.177z M267.025,489.446
+                                c3.93-6.608,5.806-13.703,5.736-21.243c-0.013-1.405-1.033-2.8-1.588-4.2c-1.092,1.041-2.641,1.883-3.199,3.158
+                                C264.805,474.404,265.709,481.918,267.025,489.446z"/>
+                            <path d="M517.628,474.7c-1.645,3.982-3.109,8.051-4.968,11.93c-5.396,11.26-11.674,21.917-23.087,28.184
+                                c-2.992,1.643-6.451,2.896-9.819,3.301c-9.159,1.099-15.845-2.804-18.35-11.746c-2.129-7.603-3.775-15.678-3.626-23.506
+                                c0.242-12.66,2.131-25.289,3.328-37.93c0.023-0.247,0.03-0.53,0.153-0.729c1.189-1.94,2.231-5.284,3.648-5.454
+                                c1.986-0.238,4.578,1.542,6.286,3.13c1.071,0.996,1.619,3.339,1.338,4.883c-2.89,15.837-3.455,31.734-1.782,47.728
+                                c0.039,0.373,0.038,0.753,0.111,1.118c2.387,12.027,11.408,15.739,21.653,8.934c9.897-6.574,16.082-16.214,21.76-26.276
+                                c0.771-1.366,1.501-2.756,2.249-4.135C516.891,474.32,517.26,474.51,517.628,474.7z"/>
+                            <path d="M458.566,401.149c0.126-8.496,4.932-13.342,12.581-12.621c0.967,0.091,1.969,0.353,2.847,0.766
+                                c4.302,2.023,6.401,9.047,4.628,15.267c-1.494,5.238-6.119,8.506-11.162,7.886C461.668,411.736,458.469,407.673,458.566,401.149z"
+                                />
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <style>
+        
+        
+        
+        body {
+	 background: #f3f3f3;
+}
+ .blmd-wrapp {
+	 box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	 -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	 -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	 -ms-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	 border-radius: 3px;
+	 height: auto;
+	 margin-top: 10vh;
+	 background: #fff;
+	 padding: 1em 0;
+	 position: relative;
+	 transition: height 0.5s;
+}
+ .blmd-wrapp .blmd-header-wrapp {
+	 clear: both;
+	 position: relative;
+}
+ .blmd-wrapp .blmd-header-wrapp .blmd-switches {
+	 position: relative;
+	 z-index: 3;
+}
+ .blmd-wrapp .blmd-header-wrapp .blmd-switches >button {
+	 position: absolute;
+	 right: -30px;
+	 top: 35px;
+	 transition: all 1s;
+}
+ .blmd-wrapp .blmd-header-wrapp .blmd-switches >button.active {
+	 right: 50%;
+	 top: -45px;
+	 margin-right: -32px;
+	 background: #ffc066;
+	 transform: rotate(45deg);
+	 -webkit-transform: rotate(45deg);
+	 -moz-transform: rotate(45deg);
+	 -ms-transform: rotate(45deg);
+	 -o-transform: rotate(45deg);
+	 transition: all .5s;
+}
+ .blmd-wrapp .blmd-continer {
+	 padding: 15px;
+	 height: auto;
+	 overflow: hidden;
+}
+ .blmd-wrapp .blmd-continer form {
+	 max-height: auto;
+	 transition: all 0.5s;
+}
+ .blmd-wrapp .blmd-continer form > h1 {
+	 padding: 15px 0 15px 30px;
+	 margin-right: -15px;
+	 margin-left: -15px;
+	 position: relative;
+}
+ .blmd-wrapp .blmd-continer form.form-hidden {
+	 max-height: 0;
+	 overflow: hidden;
+	 margin: 0;
+	 transition: all 0.5s;
+}
+ .blmd-wrapp .blmd-continer form#login-form > h1 {
+	 border-left: 5px solid #26a69a;
+}
+ .blmd-wrapp .blmd-continer form#Register-form > h1 {
+	 border-left: 5px solid #ffc066;
+	 color: #fff;
+}
+ .blmd-wrapp .blmd-continer form#Register-form .blmd-form .blmd-line:after {
+	 background: #ffc066;
+}
+ .blmd-wrapp .blmd-continer form#Register-form .blmd-form .form-control {
+	 color: #fff;
+}
+ .blmd-wrapp .blmd-continer form#Register-form .blmd-form .blmd-label {
+	 color: #fff;
+}
+ .blmd-wrapp .blmd-continer form#Register-form.animate {
+	 -webkit-animation: fadein .75s;
+	 -moz-animation: fadein .75s;
+	 -ms-animation: fadein .75s;
+	 -o-animation: fadein .75s;
+	 animation: fadein .75s;
+}
+ .blmd-wrapp .blmd-continer form#Register-form.animate-out {
+	 -webkit-animation: fadeout .75s;
+	 -moz-animation: fadeout .75s;
+	 -ms-animation: fadeout .75s;
+	 -o-animation: fadeout .75s;
+	 animation: fadeout .75s;
+}
+ .blmd-wrapp .blmd-color-conatiner {
+	 position: absolute;
+	 right: 0;
+	 top: 0;
+	 left: 0;
+	 bottom: 0;
+	 border-radius: 3px;
+}
+ .btn-blmd {
+	 -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,0.12), 0 1px 2px 0 rgba(0,0,0,0.24);
+	 -moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,0.12), 0 1px 2px 0 rgba(0,0,0,0.24);
+	 box-shadow: 0 1px 3px 0 rgba(0,0,0,0.12), 0 1px 2px 0 rgba(0,0,0,0.24);
+	 border-radius: 2px;
+}
+ .btn-blmd:active, .btn-blmd.active, .btn-blmd:focus, .btn-blmd:active:focus, .btn-blmd.active:focus {
+	 -webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	 -moz-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	 box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+ .btn-blmd.btn {
+	 border: 0;
+}
+ .btn-blmd.btn:focus, .btn-blmd.btn:active, .btn-blmd.btn.active, .btn-blmd.btn:active:focus, .btn-blmd.btn.active:focus {
+	 outline: 0;
+	 outline-offset: 0;
+	 -moz-box-shadow: none;
+	 -webkit-box-shadow: none;
+	 box-shadow: none;
+}
+ .btn-blmd.btn.btn-circle {
+	 padding: 15px;
+	 border-radius: 50%;
+	 line-height: 0px;
+}
+ .btn-blmd.btn.btn-circle.btn-lg {
+	 padding: 20px;
+}
+ .btn-blmd.btn.btn-circle.btn-sm {
+	 padding: 10px;
+}
+ .btn-blmd.btn.btn-circle.btn-xs {
+	 padding: 5px;
+}
+ .btn-blmd.btn.btn-default {
+	 background: #fff;
+	 color: rgba(0,0,0,0.87);
+}
+ .btn-blmd.btn.btn-default:hover, .btn-blmd.btn.btn-default:focus {
+	 background: #f2f2f2;
+}
+ .btn-blmd.btn.btn-primary {
+	 background: #465866;
+	 color: #fff;
+}
+ .btn-blmd.btn.btn-primary:hover, .btn-blmd.btn.btn-primary:focus {
+	 background: #3c4b57;
+}
+ .btn-blmd.btn.btn-info {
+	 background: #33a7cf;
+	 color: #fff;
+}
+ .btn-blmd.btn.btn-info:hover, .btn-blmd.btn.btn-info:focus {
+	 background: #2c97bc;
+}
+ .btn-blmd.btn.btn-success {
+	 background: #26a69a;
+	 color: #fff;
+}
+ .btn-blmd.btn.btn-success:hover, .btn-blmd.btn.btn-success:focus {
+	 background: #219187;
+}
+ .btn-blmd.btn.btn-warning {
+	 background: #ffc066;
+	 color: #fff;
+}
+ .btn-blmd.btn.btn-warning:hover, .btn-blmd.btn.btn-warning:focus {
+	 background: #ffb64d;
+}
+ .btn-blmd.btn.btn-danger {
+	 background: #d65c4f;
+	 color: #fff;
+}
+ .btn-blmd.btn.btn-danger:hover, .btn-blmd.btn.btn-danger:focus {
+	 background: #d1493a;
+}
+ .btn-blmd.btn.btn-link {
+	 background: #dddddd;
+	 color: rgba(0,0,0,0.87);
+}
+ .btn-blmd.btn.btn-link:hover, .btn-blmd.btn.btn-link:focus {
+	 background: #d0d0d0;
+}
+ .ripple-effect {
+	 position: relative;
+	 overflow: hidden;
+	 -webkit-transform: translate3d(0,0,0);
+	 -moz-transform: translate3d(0,0,0);
+	 -ms-transform: translate3d(0,0,0);
+	 -o-transform: translate3d(0,0,0);
+	 transform: translate3d(0,0,0);
+}
+ .ink {
+	 display: block;
+	 position: absolute;
+	 pointer-events: none;
+	 border-radius: 50%;
+	 -webkit-transform: scale(0);
+	 -moz-transform: scale(0);
+	 -ms-transform: scale(0);
+	 -o-transform: scale(0);
+	 transform: scale(0);
+	 background: rgba(0,0,0,0.2);
+	 background: -webkit-radial-gradient(rgba(0,0,0,0.2) 0,rgba(0,0,0,0.3) 40%,rgba(0,0,0,0.4) 50%,rgba(0,0,0,0.5) 60%,rgba(255,255,255,0) 70%);
+	 background: -o-radial-gradient(rgba(0,0,0,0.2) 0,rgba(0,0,0,0.3) 40%,rgba(0,0,0,0.4) 50%,rgba(0,0,0,0.5) 60%,rgba(255,255,255,0) 70%);
+	 background: -moz-radial-gradient(rgba(0,0,0,0.2) 0,rgba(0,0,0,0.3) 40%,rgba(0,0,0,0.4) 50%,rgba(0,0,0,0.5) 60%,rgba(255,255,255,0) 70%);
+	 background: radial-gradient(rgba(0,0,0,0.2) 0,rgba(0,0,0,0.3) 40%,rgba(0,0,0,0.4) 50%,rgba(0,0,0,0.5) 60%,rgba(255,255,255,0) 70%);
+	 opacity: 0.5;
+}
+ .ink.animate {
+	 -webkit-animation: ripple .75s linear;
+	 -moz-animation: ripple .75s linear;
+	 -o-animation: ripple .75s linear;
+	 animation: ripple .75s linear;
+}
+ @keyframes ripple {
+	 100% {
+		 opacity: 0;
+		 -moz-transform: scale(2.5);
+		 -ms-transform: scale(2.5);
+		 -o-transform: scale(2.5);
+		 -webkit-transform: scale(2.5);
+		 transform: scale(2.5);
+	}
+}
+ @-webkit-keyframes ripple {
+	 100% {
+		 opacity: 0;
+		 -webkit-transform: scale(2.5);
+		 -moz-transform: scale(2.5);
+		 -ms-transform: scale(2.5);
+		 -o-transform: scale(2.5);
+		 transform: scale(2.5);
+	}
+}
+ @-moz-keyframes ripple {
+	 100% {
+		 opacity: 0;
+		 -moz-transform: scale(2.5);
+		 -ms-transform: scale(2.5);
+		 -o-transform: scale(2.5);
+		 -webkit-transform: scale(2.5);
+		 transform: scale(2.5);
+	}
+}
+ @-ms-keyframes ripple {
+	 100% {
+		 opacity: 0;
+		 -ms-transform: scale(2.5);
+		 transform: scale(2.5);
+	}
+}
+ @-o-keyframes ripple {
+	 100% {
+		 opacity: 0;
+		 -o-transform: scale(2.5);
+		 -moz-transform: scale(2.5);
+		 -ms-transform: scale(2.5);
+		 -webkit-transform: scale(2.5);
+		 transform: scale(2.5);
+	}
+}
+ .ripple-effect-All {
+	 position: relative;
+	 overflow: hidden;
+	 -webkit-transform: translate3d(0,0,0);
+	 -moz-transform: translate3d(0,0,0);
+	 -ms-transform: translate3d(0,0,0);
+	 -o-transform: translate3d(0,0,0);
+	 transform: translate3d(0,0,0);
+}
+ .ink-All {
+	 display: block;
+	 position: absolute;
+	 pointer-events: none;
+	 border-radius: 50%;
+	 -webkit-transform: scale(0);
+	 -moz-transform: scale(0);
+	 -ms-transform: scale(0);
+	 -o-transform: scale(0);
+	 transform: scale(0);
+	 background: #26a69a;
+	 opacity: 1;
+}
+ .ink-All.animate {
+	 -webkit-animation: ripple-All 1.5s cubic-bezier(0.4,0,1,1);
+	 -moz-animation: ripple-All 1.5s cubic-bezier(0.4,0,1,1);
+	 -o-animation: ripple-All 1.5s cubic-bezier(0.4,0,1,1);
+	 animation: ripple-All 1.5s cubic-bezier(0.4,0,1,1);
+}
+ @keyframes ripple-All {
+	 100% {
+		 opacity: 1;
+		 -moz-transform: scale(2.5);
+		 -ms-transform: scale(2.5);
+		 -o-transform: scale(2.5);
+		 -webkit-transform: scale(2.5);
+		 transform: scale(2.5);
+	}
+}
+ @-webkit-keyframes ripple-All {
+	 100% {
+		 opacity: 1;
+		 -webkit-transform: scale(2.5);
+		 -moz-transform: scale(2.5);
+		 -ms-transform: scale(2.5);
+		 -o-transform: scale(2.5);
+		 transform: scale(2.5);
+	}
+}
+ @-moz-keyframes ripple-All {
+	 100% {
+		 opacity: 1;
+		 -moz-transform: scale(2.5);
+		 -ms-transform: scale(2.5);
+		 -o-transform: scale(2.5);
+		 -webkit-transform: scale(2.5);
+		 transform: scale(2.5);
+	}
+}
+ @-ms-keyframes ripple-All {
+	 100% {
+		 opacity: 1;
+		 -ms-transform: scale(2.5);
+		 transform: scale(2.5);
+	}
+}
+ @-o-keyframes ripple-All {
+	 100% {
+		 opacity: 1;
+		 -o-transform: scale(2.5);
+		 -moz-transform: scale(2.5);
+		 -ms-transform: scale(2.5);
+		 -webkit-transform: scale(2.5);
+		 transform: scale(2.5);
+	}
+}
+ @keyframes fadein {
+	 from {
+		 opacity: 0;
+	}
+	 to {
+		 opacity: 1;
+	}
+}
+ @-moz-keyframes fadein {
+	 from {
+		 opacity: 0;
+	}
+	 to {
+		 opacity: 1;
+	}
+}
+ @-webkit-keyframes fadein {
+	 from {
+		 opacity: 0;
+	}
+	 to {
+		 opacity: 1;
+	}
+}
+ @-ms-keyframes fadein {
+	 from {
+		 opacity: 0;
+	}
+	 to {
+		 opacity: 1;
+	}
+}
+ @-o-keyframes fadein {
+	 from {
+		 opacity: 0;
+	}
+	 to {
+		 opacity: 1;
+	}
+}
+ @keyframes fadeout {
+	 from {
+		 opacity: 1;
+	}
+	 to {
+		 opacity: 0;
+	}
+}
+ @-moz-keyframes fadeout {
+	 from {
+		 opacity: 1;
+	}
+	 to {
+		 opacity: 0;
+	}
+}
+ @-webkit-keyframes fadeout {
+	 from {
+		 opacity: 1;
+	}
+	 to {
+		 opacity: 0;
+	}
+}
+ @-ms-keyframes fadeout {
+	 from {
+		 opacity: 1;
+	}
+	 to {
+		 opacity: 0;
+	}
+}
+ @-o-keyframes fadeout {
+	 from {
+		 opacity: 1;
+	}
+	 to {
+		 opacity: 0;
+	}
+}
+ .blmd-form {
+	 margin: 3rem 0;
+	 position: relative;
+	 width: 100%;
+}
+ .blmd-form .input-group-addon {
+	 border-width: 0 0 1px;
+	 min-width: 42px;
+	 padding: 6px 12px;
+	 font-size: 13px;
+	 font-weight: 400;
+	 line-height: 1;
+	 color: #2e353b;
+	 text-align: center;
+	 background-color: transparent;
+	 border: 1px solid transparent;
+	 border-radius: 0;
+}
+ .blmd-form .blmd-line {
+	 display: inline-block;
+	 width: 100%;
+	 position: relative;
+	 vertical-align: top;
+}
+ .blmd-form .blmd-line.blmd-toggled:after {
+	 -webkit-transform: scale(1);
+	 -ms-transform: scale(1);
+	 -o-transform: scale(1);
+	 transform: scale(1);
+}
+ .blmd-form .blmd-line.blmd-toggled.hf:after {
+	 display: none;
+}
+ .blmd-form .blmd-line.blmd-toggled .blmd-label {
+	 top: -10px;
+	 font-size: 11px;
+}
+ .blmd-form .blmd-line:after {
+	 -webkit-transform: scale(0);
+	 -ms-transform: scale(0);
+	 -o-transform: scale(0);
+	 transform: scale(0);
+	 background: #26a69a;
+	 position: absolute;
+	 z-index: 3;
+	 bottom: 0;
+	 left: 0;
+	 height: 2px;
+	 width: 100%;
+	 content: "";
+	 -webkit-transition: all;
+	 -o-transition: all;
+	 transition: all;
+	 -webkit-transition-duration: .3s;
+	 transition-duration: .3s;
+}
+ .blmd-form .form-control {
+	 box-shadow: none;
+	 border-radius: 0;
+	 position: relative;
+	 background: 0 0;
+	 z-index: 1;
+	 border-left: 0;
+	 border-right: 0;
+	 border-top: 0;
+	 -webkit-appearance: none;
+	 -moz-appearance: none;
+	 appearance: none;
+	 padding: 0;
+}
+ .blmd-form .blmd-label {
+	 -webkit-transition: all;
+	 -o-transition: all;
+	 transition: all;
+	 -webkit-transition-duration: .2s;
+	 transition-duration: .2s;
+	 position: absolute;
+	 top: 5px;
+	 font-weight: 400;
+	 color: #959595;
+	 pointer-events: none;
+	 z-index: 0;
+	 left: 0;
+	 white-space: nowrap;
+}
+ 
+</style>
+<script>
+(function ($) {
+    
+    // Ripple-effect animation
+    $(".ripple-effect").click(function (e) {
+        var rippler = $(this);
+
+      	rippler.append("<span class='ink'></span>");
+
+        var ink = rippler.find(".ink:last-child");
+        // prevent quick double clicks
+        ink.removeClass("animate");
+
+        // set .ink diametr
+        if (!ink.height() && !ink.width()) {
+            var d = Math.max(rippler.outerWidth(), rippler.outerHeight());
+            ink.css({
+                height: d,
+                width: d
+            });
+        }
+
+        // get click coordinates
+        var x = e.pageX - rippler.offset().left - ink.width() / 2;
+        var y = e.pageY - rippler.offset().top - ink.height() / 2;
+
+        // set .ink position and add class .animate
+        ink.css({
+            top: y + 'px',
+            left: x + 'px'
+        }).addClass("animate");
+        
+        // remove ink after 1second from parent container
+        setTimeout(function(){
+        	ink.remove();
+        },1000)
+    })
+
+
+
+// Ripple-effect-All animation
+   function fullRipper(color,time){
+       setTimeout(function(){
+            var rippler = $(".ripple-effect-All");
+            if(rippler.find(".ink-All").length == 0){
+                rippler.append("<span class='ink-All'></span>");
+                
+
+                var ink = rippler.find(".ink-All");
+                // prevent quick double clicks
+                //ink.removeClass("animate");
+
+                // set .ink diametr
+                if (!ink.height() && !ink.width()) {
+                    var d = Math.max(rippler.outerWidth(), rippler.outerHeight());
+                    ink.css({
+                        height: d,
+                        width: d
+                    });
+                }
+
+                // get click coordinates
+                var x =0;
+                var y =rippler.offset().top - ink.height()/1.5;
+
+                // set .ink position and add class .animate
+                ink.css({
+                    top: y + 'px',
+                    left: x + 'px',
+                    background:color
+                }).addClass("animate");
+
+                rippler.css('z-index',2);
+
+                setTimeout(function(){
+                    ink.css({
+                        '-webkit-transform': 'scale(2.5)',
+                        '-moz-transform': 'scale(2.5)',
+                        '-ms-transform': 'scale(2.5)',
+                        '-o-transform': 'scale(2.5)',
+                        'transform': 'scale(2.5)'
+                    })
+                    rippler.css('z-index',0);
+                },1500);
+            }
+       },time)
+        
+    }
+
+    // Form control border-bottom line
+    $('.blmd-line .form-control').bind('focus',function(){
+        $(this).parent('.blmd-line').addClass('blmd-toggled').removeClass("hf");
+    }).bind('blur',function(){
+        var val=$(this).val();
+        if(val){
+            $(this).parent('.blmd-line').addClass("hf");
+        }else{
+            $(this).parent('.blmd-line').removeClass('blmd-toggled');
+        }
+    })
+
+    // Change forms
+    $(".blmd-switch-button").click(function(){
+        var _this=$(this);
+        if(_this.hasClass('active')){
+            setTimeout(function(){
+                _this.removeClass('active');
+                $(".ripple-effect-All").find(".ink-All").remove();
+                $(".ripple-effect-All").css('z-index',0);
+            },1300);
+            $(".ripple-effect-All").find(".ink-All").css({
+                '-webkit-transform': 'scale(0)',
+                '-moz-transform': 'scale(0)',
+                '-ms-transform': 'scale(0)',
+                '-o-transform': 'scale(0)',
+                'transform': 'scale(0)',
+                'transition':'all 1.5s'
+            })
+            $(".ripple-effect-All").css('z-index',2);
+            $('#Register-form').addClass('form-hidden')
+            .removeClass('animate');
+            $('#login-form').removeClass('form-hidden');
+        }else{
+            fullRipper("#26a69a",750);
+            _this.addClass('active');
+            setTimeout(function(){
+                $('#Register-form').removeClass('form-hidden')
+                .addClass('animate');
+                $('#login-form').addClass('form-hidden');
+            },2000)
+            
+        }
+    })
+})(jQuery);
+</script>
+</body>
+</html>
