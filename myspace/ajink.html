@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<style>
+
+
+#myaskbtn {
+  
+  position: fixed;
+  bottom: 20px;
+left: 30px;
+  z-index: 99;
+  font-size: 24px;
+  border: none;
+  outline: none;
+  
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+#myaskbtn:hover {
+  background-color: #555;
+}
+</style>
+
+
+  <button type="button" id="myaskbtn" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"><i  class="fa">&#xf059;</i>ASK</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">ASK YOUR QUESTION HERE</h4>
+        </div>
+        <div class="modal-body">
+        
+                        <form class="form-inline" method="post" action="<?php echo qa_path_html( 'ask' ); ?>">
+                     <textarea STYLE="width:100%;height:250px;" type="text" id="ask" ></textarea>
+                          
+                            <button type="submit" class="btn btn-primary">SUBMIT QUESTION</button>  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          <input type="hidden" name="doask1" value="1">
+                        </form>
+                    </div>
+        </div>
+        <div class="modal-footer">
+         
+      </div>
+      
+    </div>
+ 
+ 
+
+</body>
+</html>
